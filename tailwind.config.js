@@ -15,12 +15,14 @@ module.exports = {
     extend: {
       colors: {
         white: "#fff",
-        black: "#0C0F12",
+        black: "#000",
         // primary: "#30434E",
         primary: "#245AEC",
         secondary: "#0F1D30",
         brightgray: "#EAEEE9",
         richblack: "#051118",
+        roseGoldDark:'#f26a6a',
+        roseGold:"#f89899",
       },
       fontSize: {
         verysmall: [
@@ -105,6 +107,9 @@ module.exports = {
       fontFamily: {
         "Plus-Jakarta-Sans": "Plus Jakarta Sans, sans-serif",
         manrope: "Manrope, sans-serif",
+        ametrine:"Ametrine",
+        ametrineItalic:"Ametrine-Italic",
+        josefin:"Josefin Sans, sans-serif"
       },
       animation: {
         marquee: "marqueeanim 30s normal linear infinite",

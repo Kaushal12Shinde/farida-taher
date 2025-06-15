@@ -7,65 +7,157 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Rigi - Real Money - Exhibitionist</title>
+    <title>Wild Sugar Mysore - Farida Taher</title>
     <meta name="description" content="" />
+    <link rel="shortcut icon" href="img/wild-sugar-favion.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/tailwind.css" />
+      />
+      <link rel="stylesheet" href="css/tailwind.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+      <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script> 
   </head>
-  <body>
+  <style>
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      background: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.117) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+      pointer-events: none;
+      /* background-color: #000000; */
+      opacity: 1.2;
+    }
+    p {
+      font-family: "Josefin Sans", sans-serif !important;
+    }
+
+    .ring {
+      --border-bottom-width: 1px;
+      --border-color: #f26a6ab8;
+      /* rgba(255, 255, 255, 0.303) */
+      --border-left-width: 1px;
+      --border-right-width: 1px;
+      --border-style: solid;
+      --border-top-width: 1px;
+      -webkit-mask: linear-gradient(
+          180deg,
+          #000000 0%,
+          rgba(0, 0, 0, 0.16) 82.8441722972973%
+        )
+        add;
+      /* border-radius: 48px; */
+      flex: none;
+      inset: 0;
+      mask: linear-gradient(
+          180deg,
+          #000000 0%,
+          rgba(0, 0, 0, 0.16) 82.8441722972973%
+        )
+        add;
+      overflow: hidden;
+      pointer-events: none;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .ring::after {
+      content: "";
+      border-width: var(--border-top-width, 0) var(--border-right-width, 0)
+        var(--border-bottom-width, 0) var(--border-left-width, 0);
+      border-color: var(--border-color, none);
+      border-style: var(--border-style, none);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      box-sizing: border-box;
+      left: 0;
+      top: 0;
+      border-radius: inherit;
+      pointer-events: none;
+    }
+
+    .course-slider {
+    position: relative;
+    width: 100%;
+  }
+
+  .course-slider .swiper {
+    padding-bottom: 40px;
+  }
+
+  .course-slider .swiper-slide {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px; /* 👈 Important to prevent infinite vertical scrolling */
+  }
+
+  .course-slider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .course-slider .swiper-button-prev,
+  .course-slider .swiper-button-next {
+    width: 36px;
+    height: 36px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .course-slider .swiper-button-prev::after,
+  .course-slider .swiper-button-next::after {
+    font-size: 16px;
+  }
+
+  .course-slider .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #999;
+    opacity: 0.5;
+  }
+
+  .course-slider .swiper-pagination-bullet-active {
+    background: #f26a8d;
+    opacity: 1;
+  }
+
+  .share-toast {
+  font-size: 14px;
+  color: #f26a8d;
+  margin-left: 8px;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}
+  </style>
+  <body class="bg-black">
     <header>
       <nav
-        class="header-main pb-1 duration-300 fixed top-0 left-0 right-0 z-50 border-b border-b-white/50"
+        class="header-main py-1 duration-300 fixed top-0 left-0 right-0 z-50 border-b border-b-white/50"
       >
-        <div class="flex mb-1">
-          <div
-            class="flex mx-[-0.5px] animate-marquee min-w-full flex-shrink-0 bg-[#ffdb4d] flex-nowrap items-center justify-center overflow-hidden"
-          >
-            <div class="w-fit whitespace-nowrap py-1 px-3 text-14">
-              ⏰ Last Day to Enroll is Today, Hurry Up! Use the Coupon Code
-              HAPPY for the Maximum Discount ⏰
-            </div>
-            <div class="w-fit whitespace-nowrap py-1 px-3 text-14">
-              ⏰ Last Day to Enroll is Today, Hurry Up! Use the Coupon Code
-              HAPPY for the Maximum Discount ⏰
-            </div>
-            <div class="w-fit whitespace-nowrap py-1 px-3 text-14">
-              ⏰ Last Day to Enroll is Today, Hurry Up! Use the Coupon Code
-              HAPPY for the Maximum Discount ⏰
-            </div>
-          </div>
-          <div
-            class="flex mx-[-0.5px] animate-marquee min-w-full flex-shrink-0 bg-[#ffdb4d] flex-nowrap items-center justify-center overflow-hidden"
-          >
-            <div class="w-fit whitespace-nowrap py-1 px-3 text-14">
-              ⏰ Last Day to Enroll is Today, Hurry Up! Use the Coupon Code
-              HAPPY for the Maximum Discount ⏰
-            </div>
-            <div class="w-fit whitespace-nowrap py-1 px-3 text-14">
-              ⏰ Last Day to Enroll is Today, Hurry Up! Use the Coupon Code
-              HAPPY for the Maximum Discount ⏰
-            </div>
-            <div class="w-fit whitespace-nowrap py-1 px-3 text-14">
-              ⏰ Last Day to Enroll is Today, Hurry Up! Use the Coupon Code
-              HAPPY for the Maximum Discount ⏰
-            </div>
-          </div>
-        </div>
         <div class="container">
           <div class="flex items-center justify-between -mx-2">
             <div class="px-2 order-0 lg:order-none">
               <a href="/" class="">
-                <img class="" src="img/exhibitionist/logo.svg" alt="" />
+                <img class="w-[200px]" src="img/wild-sugar-nav-logo.svg" alt="" />
               </a>
             </div>
             <div class="px-2 order-1 lg:order-none">
@@ -133,2521 +225,349 @@
 
     <main>
       <section
-        class="hero-section pt-[150px] pb-5 lg:pb-[200px] lg:pt-[160px] overflow-hidden relative z-[2]"
+        class="hero-section h-screen overflow-hidden relative z-[2] flex items-center justify-center"
       >
-        <div class="absolute top-0 left-0 bottom-0 h-full w-full">
-          <!-- <video autoplay muted loop playsinline class="w-full">
-            <source src="img/premium/hero-video.mp4" type="video/mp4" />
-          </video>
-          <div class="absolute inset-0 bg-[#000000]/50"></div> -->
-          <img class="h-full" src="img/exhibitionist/hero-bg.webp" alt="" />
+        <div class="absolute top-0 left-0 right-0 bottom-0 h-full w-full">
+          <div class="overlay"></div>
+          <img
+            class="h-full w-full object-cover"
+            src="img/farida-1.JPG"
+            alt=""
+          />
         </div>
         <div class="container relative">
-          <div class="flex lg:flex-row flex-col items-center">
-            <div class="w-full lg:w-1/2">
+          <h1
+            class="text-[80px] font-bold font-ametrine text-white text-center mt-[80px] leading-[2.4]"
+          >
+            Wild Sugar
+          </h1>
+          <p
+            class="text-white font-semibold text-[22px] md:text-[26px] text-center flex items-center justify-center"
+          >
+            <span class="tracking-[-3.9px] text-16 mr-2"
+              >&#8213;&#8213;&#8213;&#8213;</span
+            >
+            by Chef Farida
+            <span class="tracking-[-3.9px] text-16 ml-[12px]"
+              >&#8213;&#8213;&#8213;&#8213;</span
+            >
+          </p>
+        </div>
+      </section>
+      <section class="py-[60px]">
+        <div class="container">
+          <div class="max-w-[990px] mx-auto">
+            <p
+              class="text-white font-medium text-20 md:text-[22px] text-center"
+            >
+              Where I will help you level up your skills with a focus on
+              flavours, textures, unique combinations and amazing techniques. My
+              Funda on baking is to keep it simple yet irresisitibly delicious!
+            </p>
+            <div class="flex items-center justify-center gap-2">
+              <div class="md:min-w-[200px]">
+                <h1
+                  class="text-[30px] md:text-[50px] font-bold text-roseGold text-center"
+                >
+                  07
+                </h1>
+                <p
+                  class="text-white font-medium text-18 md:text-20 text-center"
+                >
+                  Years of Experience
+                </p>
+              </div>
+              <div class="md:min-w-[200px]">
+                <h1
+                  class="text-[30px] md:text-[50px] font-bold text-roseGold text-center"
+                >
+                  10k+
+                </h1>
+                <p
+                  class="text-white font-medium text-18 md:text-20 text-center"
+                >
+                  Reviews
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pb-[60px] md:pb-[80px]">
+        <div class="container">
+          <h1 class="text-[40px] md:text-[46px] text-center text-white font-josefin">Explore <span class="text-roseGold">Courses</span></h1>
+          <div class="flex items-center flex-col lg:flex-row gap-[28px] lg:gap-[40px] mt-[90px]">
+            <div class="lg:w-[50%] flex-1">
+              <h1 class="text-[24px] md:text-[28px] font-josefin text-roseGold font-bold mb-1 text-center lg:text-left">Eggfree, Gluten Free Millet Cookies Masterclass</h1>
+              <p class="text-white text-[22px] md:text-[24px] tracking-[0.5px] font-bold text-center lg:text-left"> ₹1,899/- <span class="line-through text-18 md:text-20"> ₹2,899/-</span></p>
+              <div class="flex items-center gap-4 mt-1 w-fit mx-auto lg:mx-0">
+                <div class="flex items-center gap-[12px]">
+                  <div
+                    class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20"
+                  >
+                    <img src="img/star.svg" class="w-[25px] mt-[-1px]" alt="" />
+                  </div>
+                  <p class="text-white text-20 mb-0 leading-[0]">4.8</p>
+                </div>
+                <div class="flex items-center gap-[12px]">
+                  <div
+                    class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20"
+                  >
+                    <img
+                      src="img/share.svg"
+                      class="w-[25px] mt-[-1px]"
+                      alt=""
+                    />
+                  </div>
+                  <p class="text-white text-20 mb-0 leading-[0]">Share</p>
+                </div>
+              </div>
+              <button
+                class="wild-theme-btn text-18 md:text-[20px] mt-4 rounded-lg text-white flex items-center justify-center w-full lg:w-[260px] mx-auto lg:mx-0"
+              >
+                Know More
+                <img
+                  src="img/arrow-right.svg"
+                  class="inline-block ml-1 w-[24px]"
+                  alt=""
+                />
+              </button>
+            </div>
+            <div class="w-[95%] lg:w-[50%] mx-auto">
+              <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" src="img/millet-cookies/slider-1.webp" alt="Course 1" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" src="img/millet-cookies/slider-2.webp" alt="Course 2" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" src="img/millet-cookies/cookie-banner.webp" alt="Course 3" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" src="img/millet-cookies/slider-3.webp" alt="Course 4" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" src="img/millet-cookies/slider-4.webp" alt="Course 5" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" src="img/millet-cookies/slider-5.webp" alt="Course 6" />
+                    </div>
+                  </div>
+              
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center flex-col lg:flex-row-reverse gap-[28px] lg:gap-[40px] mt-[100px]">
+            <div class="lg:w-[50%] flex-1">
+              <h1 class="text-[24px] md:text-[28px] font-josefin text-roseGold font-bold mb-1 text-center">Eggfree, Gluten Free Millet Cookies Masterclass</h1>
+              <p class="text-white text-[22px] md:text-[24px] tracking-[0.5px] font-bold text-center"> ₹1,899/- <span class="line-through text-18 md:text-20"> ₹2,899/-</span></p>
+              <div class="flex items-center gap-4 mt-1 w-fit mx-auto">
+                <div class="flex items-center gap-[12px]">
+                  <div
+                    class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20"
+                  >
+                    <img src="img/star.svg" class="w-[25px] mt-[-1px]" alt="" />
+                  </div>
+                  <p class="text-white text-20 mb-0 leading-[0]">4.8</p>
+                </div>
+                <div class="flex items-center gap-[12px]">
+                  <div
+                    class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20"
+                  >
+                    <img
+                      src="img/share.svg"
+                      class="w-[25px] mt-[-1px]"
+                      alt=""
+                    />
+                  </div>
+                  <p class="text-white text-20 mb-0 leading-[0]">Share</p>
+                </div>
+              </div>
+              <button
+                class="wild-theme-btn text-18 md:text-[20px] mt-4 rounded-lg text-white flex items-center justify-center w-full lg:w-[260px] mx-auto"
+              >
+                Know More
+                <img
+                  src="img/arrow-right.svg"
+                  class="inline-block ml-1 w-[24px]"
+                  alt=""
+                />
+              </button>
+            </div>
+            <div class="w-[95%] lg:w-[50%] mx-auto">
+              <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" src="img/millet-cookies/slider-1.webp" alt="Course 1" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" src="img/millet-cookies/slider-2.webp" alt="Course 2" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" src="img/millet-cookies/cookie-banner.webp" alt="Course 3" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" src="img/millet-cookies/slider-3.webp" alt="Course 4" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" src="img/millet-cookies/slider-4.webp" alt="Course 5" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" src="img/millet-cookies/slider-5.webp" alt="Course 6" />
+                    </div>
+                  </div>
+              
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="wild-theme-btn text-18 md:text-[20px] rounded-lg text-white flex justify-center items-center w-full md:w-[300px] mx-auto mt-[80px]"
+          >
+            Expolre More Courses
+            <img
+              src="img/arrow-right.svg"
+              class="inline-block ml-1 w-[24px]"
+              alt=""
+            />
+          </button>
+        </div>
+      </section>
+      <section class="py-[60px] md:py-[80px]">
+        <div class="container">
+          <div
+            class="max-w-[1160px] mx-auto flex items-center justify-center bg-[#020202] rounded-sm md:rounded-[48px] flex-col md:flex-row gap-[30px] md:gap-[64px] p-[28px] md:p-[48px] relative h-min"
+          >
+            <div class="ring rounded-2xl md:rounded-[48px]"></div>
+            <div class="md:w-[40%]">
+              <img
+                src="img/ebook-1.png"
+                class="md:max-w-[250px] mx-auto object-cover rounded-xl"
+                alt=""
+              />
+            </div>
+            <div class="md:w-[60%]">
               <h1
-                class="max-w-[610px] text-[36px] lg:text-[60px] font-bold leading-[1.1] text-white mb-2 lg:mb-3"
+                class="text-[24px] md:text-[26px] font-josefin text-roseGold font-bold text-center md:text-left"
               >
-                Unlock Your Fantasy Sports Victory
+                Frostings & Fillings in popular Ice Cream Flavours
               </h1>
-              <div
-                class="text-white/70 max-w-[505px] text-base lg:text-xl relative"
-              >
-                Are you ready to transform your fantasy sports experience? Look
-                no further! Our exceptional teacher, renowned across India, is
-                here to guide you to fantasy sports victory.
-              </div>
-
-              <div class="lg:max-w-[175px] w-full mt-4 mb-3 lg:mb-6">
-                <a
-                  href="#!"
-                  class="button py-[18px] px-[40px] lg:px-[32px] rounded-[50px] w-full bg-white inline-block text-black font-semibold text-14 leading-none"
-                >
-                  <div class="relative overflow-hidden">
-                    <span class="button-content">Explore Courses</span>
-                    <span class="button-content-hover">Explore Courses</span>
-                  </div>
-                </a>
-              </div>
-
-              <div class="flex items-center text-white">
-                <div class="flex items-center">
-                  <div class="stacked-avatars mr-1 lg:mr-[12px]">
-                    <div>
-                      <img
-                        class="w-[24px] h-[24px] lg:w-5 lg:h-5"
-                        src="img/exhibitionist/stack1-img.png"
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <img
-                        class="w-[24px] h-[24px] lg:w-5 lg:h-5"
-                        src="img/exhibitionist/stack2-img.png"
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <img
-                        class="w-[24px] h-[24px] lg:w-5 lg:h-5"
-                        src="img/exhibitionist/stack3-img.png"
-                        alt=""
-                      />
-                    </div>
-                    <div>
-                      <img
-                        class="w-[24px] h-[24px] lg:w-5 lg:h-5"
-                        src="img/exhibitionist/stack4-img.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                  <div class="flex flex-col">
-                    <div class="text-14 lg:text-18 font-bold font-manrope">
-                      45,000+
-                    </div>
-                    <div
-                      class="text-12 lg:text-14 font-medium opacity-80 font-manrope mt-[2px]"
-                    >
-                      Students Worldwide
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="h-[24px] lg:h-[44px] w-[1px] bg-white/[0.12] mx-[18px] lg:mx-[23px]"
-                ></div>
-                <div class="flex lg:flex-col flex-col-reverse">
-                  <div class="flex flex-row items-center font-manrope">
-                    <div class="text-14 lg:text-18 font-bold mr-[5px]">
-                      4.6+
-                    </div>
-                    <div
-                      class="text-12 lg:text-14 font-medium opacity-80 font-manrope"
-                    >
-                      (12,421 ratings)
-                    </div>
-                  </div>
-                  <div class="">
-                    <img src="img/exhibitionist/star-4-6.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full lg:w-1/2">
-              <div class="md:max-w-[520px] lg:ml-auto">
-                <img
-                  class="w-full"
-                  src="img/exhibitionist/hero-img.webp"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-white overflow-hidden py-5 md:py-[80px]">
-        <div class="container lg:overflow-hidden">
-          <div
-            class="text-center text-xl font-semibold lg:text-20 leading-[1.5] text-[#091135] mb-3 lg:mb-4"
-          >
-            Our collaborators were part and featured in
-          </div>
-
-          <div class="w-full">
-            <div
-              class="flex items-center justify-around lg:justify-between flex-wrap"
-            >
-              <div class="item mb-3 lg:mb-0 w-1/2 lg:w-fit">
-                <div class="flex justify-center items-center">
-                  <img
-                    src="img/exhibitionist/slider/volume.png"
-                    loading="lazy"
-                    class="max-w-[130px]"
-                    width="130"
-                    height="35"
-                    alt="volume"
-                  />
-                </div>
-              </div>
-              <div class="item mb-3 lg:mb-0 w-1/2 lg:w-fit">
-                <div class="flex justify-center items-center">
-                  <img
-                    src="img/exhibitionist/slider/genz.png"
-                    loading="lazy"
-                    class="max-w-[116px]"
-                    width="116"
-                    height="29"
-                    alt="genz"
-                  />
-                </div>
-              </div>
-              <div class="item mb-3 lg:mb-0 w-1/2 lg:w-fit">
-                <div class="flex justify-center items-center">
-                  <img
-                    src="img/exhibitionist/slider/pinpoint.png"
-                    loading="lazy"
-                    class="max-w-[143px]"
-                    width="143"
-                    height="36"
-                    alt="pinpoint"
-                  />
-                </div>
-              </div>
-              <div class="item mb-3 lg:mb-0 w-1/2 lg:w-fit">
-                <div class="flex justify-center items-center">
-                  <img
-                    src="img/exhibitionist/slider/vertigo.png"
-                    loading="lazy"
-                    class="max-w-[109px]"
-                    width="109"
-                    height="41"
-                    alt="vertigo"
-                  />
-                </div>
-              </div>
-              <div class="item w-1/2 lg:w-fit">
-                <div class="flex justify-center items-center">
-                  <img
-                    src="img/exhibitionist/slider/ebooks.png"
-                    loading="lazy"
-                    class="max-w-[118px]"
-                    width="118"
-                    height="36"
-                    alt="ebooks"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="pt-2 pb-5 lg:py-[80px]">
-        <div class="container">
-          <div class="flex justify-between lg:flex-row flex-col">
-            <div
-              class="text-heading-small lg:text-heading font-bold text-[#0C0F12] lg:max-w-[505px]"
-            >
-              Get the skills you need to win in fantasy&nbsp;sports
-            </div>
-            <div
-              class="text-small lg:text-xl text-[#888888] lg:max-w-[505px] mt-2 lg:mt-0"
-            >
-              The modern labor market dictates its own terms. Today, to be a
-              competitive specialist requires more than professional skills.
-            </div>
-          </div>
-          <div class="flex lg:flex-row flex-col-reverse items-center">
-            <div class="w-full lg:w-[30%] mt-4 lg:mt-0">
-              <div class="flex text-[#0C0F12] gap-3 lg:my-[30px]">
-                <img src="img/exhibitionist/ace-fantasy-program.svg" alt="" />
-                <div class="max-w-[190px]">
-                  <div class="text-base lg:text-xl leading-[1.1] font-bold">
-                    Ace Fantasy Program
-                  </div>
+              <p class="text-white/90 text-18 md:text-[19px] mt-1 mb-0 text-center md:text-left">
+                - Chef Farida
+              </p>
+              <div class="flex items-center gap-4 mt-2 w-fit mx-auto md:mx-0">
+                <div class="flex items-center gap-[12px]">
                   <div
-                    class="text-[#888888] text-small lg:text-base22 mt-[10px] lg:mt-[15px]"
+                    class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20"
                   >
-                    Known different types of fantasy platform
+                    <img src="img/star.svg" class="w-[25px] mt-[-1px]" alt="" />
                   </div>
+                  <p class="text-white text-20 mb-0 leading-[0]">4.8</p>
                 </div>
-              </div>
-              <div class="flex text-[#0C0F12] gap-3 lg:my-[30px]">
-                <img src="img/exhibitionist/depth-analysis.svg" alt="" />
-                <div class="max-w-[190px]">
-                  <div class="text-base lg:text-xl leading-[1.1] font-bold">
-                    In-depth Analysis
-                  </div>
+                <div class="flex items-center gap-[12px] share-btn"  data-url="https://yoursite.com/course/a">
                   <div
-                    class="text-[#888888] text-small lg:text-base22 mt-[10px] lg:mt-[15px]"
-                  >
-                    Known different types of fantasy platform
-                  </div>
-                </div>
-              </div>
-              <div class="flex text-[#0C0F12] gap-3 lg:my-[30px]">
-                <img src="img/exhibitionist/instant-results.svg" alt="" />
-                <div class="max-w-[190px]">
-                  <div class="text-base lg:text-xl leading-[1.1] font-bold">
-                    Instant Results
-                  </div>
-                  <div
-                    class="text-[#888888] text-small lg:text-base22 mt-[10px] lg:mt-[15px]"
-                  >
-                    Known different types of fantasy platform
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full lg:w-[70%]">
-              <div class="relative">
-                <div class="relative flex justify-center translate-y-[50%]">
-                  <div
-                    class="relative flex justify-between items-center text-white py-[18px] lg:py-[28px] px-[20px] lg:px-4"
+                    class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20"
                   >
                     <img
-                      class="rounded-2xl absolute inset-0 z-[-1]"
-                      src="img/exhibitionist/bg-gradient.png"
+                      src="img/share.svg"
+                      class="w-[25px] mt-[-1px]"
                       alt=""
                     />
-                    <div
-                      class="text-[28px] lg:text-[52px] leading-none font-semibold mr-[7px] lg:mr-[13px]"
-                    >
-                      10
-                    </div>
-                    <div class="flex flex-col">
-                      <div
-                        class="text-[7px] lg:text-[13px] leading-[1.5] font-bold uppercase"
-                      >
-                        Years
-                      </div>
-                      <div
-                        class="text-[7px] lg:text-[13px] leading-[1.5] font-bold uppercase"
-                      >
-                        experiences
-                      </div>
-                    </div>
-                    <div
-                      class="w-[1px] h-[20px] lg:h-[40px] bg-white mx-[22px] lg:mx-[40px]"
-                    ></div>
-                    <div
-                      class="text-[28px] lg:text-[52px] leading-none font-semibold mr-[7px] lg:mr-[13px]"
-                    >
-                      16M
-                    </div>
-                    <div class="flex flex-col">
-                      <div
-                        class="text-[7px] lg:text-[13px] leading-[1.5] font-bold uppercase"
-                      >
-                        Social Media
-                      </div>
-                      <div
-                        class="text-[7px] lg:text-[13px] leading-[1.5] font-bold uppercase"
-                      >
-                        Followers
-                      </div>
-                    </div>
                   </div>
+                  <p class="text-white text-20 mb-0 leading-[0]">Share</p>
                 </div>
-                <a href="#!">
-                  <img
-                    class="rounded-2xl"
-                    src="img/exhibitionist/skills-bg.jpg"
-                    alt=""
-                  />
-                </a>
-                <button
-                  class="absolute z-[20] sm:right-[15px] right-1 bottom-1 sm:bottom-[15px]"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M5.33316 2.02236C7.30655 0.703787 9.62663 0 12 0C13.5759 0 15.1363 0.310389 16.5922 0.913445C18.0481 1.5165 19.371 2.40041 20.4853 3.51472C21.5996 4.62902 22.4835 5.95189 23.0866 7.4078C23.6896 8.8637 24 10.4241 24 12C24 14.3734 23.2962 16.6934 21.9776 18.6668C20.6591 20.6402 18.7849 22.1783 16.5922 23.0865C14.3995 23.9948 11.9867 24.2324 9.65892 23.7694C7.33115 23.3064 5.19295 22.1635 3.51472 20.4853C1.83649 18.807 0.693604 16.6688 0.230582 14.3411C-0.232441 12.0133 0.00519961 9.60051 0.913451 7.4078C1.8217 5.21508 3.35977 3.34094 5.33316 2.02236ZM9.6 6C9.28174 6 8.97652 6.12643 8.75147 6.35147C8.52643 6.57652 8.4 6.88174 8.4 7.2V16.8C8.4 17.1183 8.52643 17.4235 8.75147 17.6485C8.97652 17.8736 9.28174 18 9.6 18C9.91826 18 10.2235 17.8736 10.4485 17.6485C10.6736 17.4235 10.8 17.1183 10.8 16.8V7.2C10.8 6.88174 10.6736 6.57652 10.4485 6.35147C10.2235 6.12643 9.91826 6 9.6 6ZM14.4 6C14.0817 6 13.7765 6.12643 13.5515 6.35147C13.3264 6.57652 13.2 6.88174 13.2 7.2V16.8C13.2 17.1183 13.3264 17.4235 13.5515 17.6485C13.7765 17.8736 14.0817 18 14.4 18C14.7183 18 15.0235 17.8736 15.2485 17.6485C15.4736 17.4235 15.6 17.1183 15.6 16.8V7.2C15.6 6.88174 15.4736 6.57652 15.2485 6.35147C15.0235 6.12643 14.7183 6 14.4 6Z"
-                      fill="white"
-                    />
-                  </svg>
-                </button>
               </div>
+              <button
+                class="wild-theme-btn text-18 md:text-[20px] mt-4 rounded-lg text-white flex justify-center items-center w-full md:min-w-[260px]"
+               
+              >
+                Get the E-book
+                <img
+                  src="img/arrow-right.svg"
+                  class="inline-block ml-1 w-[24px]"
+                  alt=""
+                />
+              </button>
+              <!-- <span class="share-toast">Link copied!</span> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-[60px] md:py-[80px]">
+        <div class="container">
+          <h1 class="text-[40px] text-center text-white font-josefin">Meet the <span class="text-roseGold">Chef</span></h1>
+          <div class="flex md:flex-row items-center mt-[50px] gap-[74px]">
+            <div class="md:w-[40%]">
+              <img src="img/about.webp" class="rounded-xl" alt="">
+            </div>
+            <div class="md:w-[60%]">
+              <p class="text-white text-18 md:text-20 font-medium"> Hi! I am Farida and I am the founder of Wild Sugar Gourmet Baking in Mysore. I was a GMAT/GRE trainer at The Princeton Review before I took up baking!</p>
+              <p class="text-white text-18 md:text-20 font-medium"> I am professionally trained <a href="https://www.instagram.com/whitecapsind/" class="text-roseGold font-bold">@whitecapsind</a> International school of Pastry where I took up the Paris Patisserie program and a few courses <a href="https://www.instagram.com/lavonneacademyindia/" class="text-roseGold font-bold">@lavonneacademyindia</a>. Getting a certification and learning professionally worked beautifully for me since it brought my vision to life. Wild Sugar was launched on September 3rd, 2020.</p>
+              <p class="text-white text-18 md:text-20 font-medium"> Today I own a baking studio and have launched 40+ online workshops with a 5000+ student base. Welcome to my page!</p>
             </div>
           </div>
         </div>
       </section>
 
       <section
-        class="bg-[#0E002D] py-5 lg:py-[90px] overflow-hidden relative"
-        id="about"
-      >
-        <div class="absolute top-0 right-[-100%] lg:right-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="799"
-            height="552"
-            viewBox="0 0 799 552"
-            fill="none"
-          >
-            <g filter="url(#filter0_f_2125_17594)">
-              <path
-                d="M178.583 -53.0338C117.152 140.323 204.262 351.259 310.498 385.011C416.733 418.763 563.678 354.22 625.109 160.864C655.551 65.0465 711.11 -96.0643 694.375 -226.711C677.339 -359.706 422.841 -265.196 369.25 -282.222C263.014 -315.974 240.015 -246.39 178.583 -53.0338Z"
-                fill="#4242d852"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_f_2125_17594"
-                x="0.618118"
-                y="-456.612"
-                width="854.411"
-                height="1007.74"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="78.7886"
-                  result="effect1_foregroundBlur_2125_17594"
-                />
-              </filter>
-            </defs>
-          </svg>
-        </div>
-        <div class="container relative z-[1]">
-          <div class="text-center mb-[40px] lg:mb-6">
-            <div
-              class="max-w-[516px] mx-auto text-heading-small lg:text-heading text-white mb-2 lg:mb-3"
-            >
-              The Ultimate Cricket Fantasy Mastercourse
-            </div>
-            <div
-              class="max-w-[505px] mx-auto text-small lg:text-xl text-white/80"
-            >
-              The modern labor market dictates its own terms. Today, to be a
-              competitive specialist required
-            </div>
-          </div>
-          <div class="max-w-[842px] mx-auto">
-            <div class="flex lg:flex-row flex-col gap-3">
-              <div class="w-full lg:w-[505px]">
-                <div class="rounded-[20px] px-3 py-3 border border-white/20">
-                  <a href="#!" class="relative">
-                    <img
-                      class="rounded-[20px] w-full"
-                      src="img/exhibitionist/timer-section-img.jpg"
-                      alt=""
-                    />
-                    <button
-                      class="absolute z-[20] sm:right-[15px] right-1 bottom-1 sm:bottom-[15px]"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M5.33316 2.02236C7.30655 0.703787 9.62663 0 12 0C13.5759 0 15.1363 0.310389 16.5922 0.913445C18.0481 1.5165 19.371 2.40041 20.4853 3.51472C21.5996 4.62902 22.4835 5.95189 23.0866 7.4078C23.6896 8.8637 24 10.4241 24 12C24 14.3734 23.2962 16.6934 21.9776 18.6668C20.6591 20.6402 18.7849 22.1783 16.5922 23.0865C14.3995 23.9948 11.9867 24.2324 9.65892 23.7694C7.33115 23.3064 5.19295 22.1635 3.51472 20.4853C1.83649 18.807 0.693604 16.6688 0.230582 14.3411C-0.232441 12.0133 0.00519961 9.60051 0.913451 7.4078C1.8217 5.21508 3.35977 3.34094 5.33316 2.02236ZM9.6 6C9.28174 6 8.97652 6.12643 8.75147 6.35147C8.52643 6.57652 8.4 6.88174 8.4 7.2V16.8C8.4 17.1183 8.52643 17.4235 8.75147 17.6485C8.97652 17.8736 9.28174 18 9.6 18C9.91826 18 10.2235 17.8736 10.4485 17.6485C10.6736 17.4235 10.8 17.1183 10.8 16.8V7.2C10.8 6.88174 10.6736 6.57652 10.4485 6.35147C10.2235 6.12643 9.91826 6 9.6 6ZM14.4 6C14.0817 6 13.7765 6.12643 13.5515 6.35147C13.3264 6.57652 13.2 6.88174 13.2 7.2V16.8C13.2 17.1183 13.3264 17.4235 13.5515 17.6485C13.7765 17.8736 14.0817 18 14.4 18C14.7183 18 15.0235 17.8736 15.2485 17.6485C15.4736 17.4235 15.6 17.1183 15.6 16.8V7.2C15.6 6.88174 15.4736 6.57652 15.2485 6.35147C15.0235 6.12643 14.7183 6 14.4 6Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </button>
-                  </a>
-                  <div class="flex items-center text-white pt-3">
-                    <div class="text-32 leading-[1.25] font-bold mr-[12px]">
-                      ₹499
-                    </div>
-                    <div class="text-base font-normal line-through">₹2,999</div>
-                    <div
-                      class="py-1 px-[23px] rounded-[9px] bg-[#36CE58] ml-auto"
-                    >
-                      70% OFF
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- timer for desktop -->
-              <div class="w-full lg:w-[313px] text-white hidden lg:block">
-                <div
-                  class="pt-2 pb-[6px] pr-[25px] pl-[15px] border border-white/20 rounded-3xl mb-[27px] relative"
-                >
-                  <div class="flex items-end justify-between">
-                    <div class="text-base26">Days</div>
-                    <div class="text-superbold-heading days-container">:00</div>
-                  </div>
-                  <div class="absolute top-[-4px] left-[-10px]">
-                    <div
-                      class="py-1 px-1 bg-white text-[#232423] rounded-[2px] uppercase text-12 font-semibold relative z-[1]"
-                    >
-                      LIMITED PERIOD
-                    </div>
-                    <svg
-                      class="mt-[-1.5px] z-0 absolute"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="10"
-                      height="15"
-                      viewBox="0 0 10 15"
-                      fill="none"
-                    >
-                      <path d="M10 0V15L1 2L0 0H10Z" fill="#E1E1E1" />
-                    </svg>
-                  </div>
-                </div>
-                <div
-                  class="pt-2 pb-[6px] pr-[25px] pl-[15px] border border-white/20 rounded-3xl mb-[27px]"
-                >
-                  <div class="flex items-end justify-between">
-                    <div class="text-base26">Hours</div>
-                    <div class="text-superbold-heading hours-container">
-                      :00
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="pt-2 pb-[6px] pr-[25px] pl-[15px] border border-white/20 rounded-3xl mb-[27px]"
-                >
-                  <div class="flex items-end justify-between">
-                    <div class="text-base26">Minutes</div>
-                    <div class="text-superbold-heading minutes-container">
-                      :00
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="pt-2 pb-[6px] pr-[25px] pl-[15px] border border-white/20 rounded-3xl mb-[27px]"
-                >
-                  <div class="flex items-end justify-between">
-                    <div class="text-base26">Seconds</div>
-                    <div class="text-superbold-heading seconds-container">
-                      :00
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="py-1 lg:py-[28px] px-1 lg:pr-[28px] border border-white/20 rounded-full my-2 lg:my-0"
-            >
-              <div class="flex justify-between items-center">
-                <div class="pr-[20px] lg:pr-[80px] w-[65%] lg:w-[80%]">
-                  <div class="logo-slider !ease-linear">
-                    <div class="item">
-                      <div
-                        class="flex justify-center items-center text-xl text-white"
-                      >
-                        <img
-                          src="img/exhibitionist/flower-tick.svg"
-                          loading="lazy"
-                          class="mr-1"
-                          alt="flower-tick"
-                        />
-                        With&nbsp;Markets
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div
-                        class="flex justify-center items-center text-xl text-white"
-                      >
-                        <img
-                          src="img/exhibitionist/flower-tick.svg"
-                          loading="lazy"
-                          class="mr-1"
-                          alt="flower-tick"
-                        />
-                        Best&nbsp;customer&nbsp;experience
-                      </div>
-                    </div>
-                    <div class="item">
-                      <div
-                        class="flex justify-center items-center text-xl text-white"
-                      >
-                        <img
-                          src="img/exhibitionist/flower-tick.svg"
-                          loading="lazy"
-                          class="mr-1"
-                          alt="flower-tick"
-                        />
-                        Money&nbsp;Refund&nbsp;Policy
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="min-w-[115px] lg:min-w-[160px]">
-                  <a
-                    href="#!"
-                    class="button rounded-[32px] lg:rounded-[47px] py-[14px] px-[24px] bg-white w-full inline-block text-[#001F4F] text-12 lg:text-14 leading-[1.0] font-semibold"
-                  >
-                    <div class="relative overflow-hidden">
-                      <span class="button-content">Buy Course</span>
-                      <span class="button-content-hover">Buy Course</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- timer for mobile -->
-            <div
-              class="rounded-3xl pt-6 px-2 pb-3 border border-white/20 relative block lg:hidden"
-            >
-              <div class="absolute top-[-4px] left-[-10px]">
-                <div
-                  class="py-1 px-1 bg-white text-[#232423] rounded-[2px] uppercase text-12 font-semibold relative z-[1]"
-                >
-                  LIMITED PERIOD
-                </div>
-                <svg
-                  class="mt-[-1.5px] z-0 absolute"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="10"
-                  height="15"
-                  viewBox="0 0 10 15"
-                  fill="none"
-                >
-                  <path d="M10 0V15L1 2L0 0H10Z" fill="#E1E1E1" />
-                </svg>
-              </div>
-              <div class="flex text-white justify-center">
-                <div class="flex flex-col items-center">
-                  <div
-                    class="text-24 leading-[1.25] font-extrabold days-container"
-                  >
-                    00
-                  </div>
-                  <div
-                    class="mt-[9px] text-12 leading-[1.8] font-semibold opacity-80"
-                  >
-                    Days
-                  </div>
-                </div>
-                <div class="text-24 leading-[1.25] font-extrabold mx-[20px]">
-                  :
-                </div>
-                <div class="flex flex-col items-center">
-                  <div
-                    class="text-24 leading-[1.25] font-extrabold hours-container"
-                  >
-                    00
-                  </div>
-                  <div
-                    class="mt-[9px] text-12 leading-[1.8] font-semibold opacity-80"
-                  >
-                    Hours
-                  </div>
-                </div>
-                <div class="text-24 leading-[1.25] font-extrabold mx-[20px]">
-                  :
-                </div>
-                <div class="flex flex-col items-center">
-                  <div
-                    class="text-24 leading-[1.25] font-extrabold minutes-container"
-                  >
-                    00
-                  </div>
-                  <div
-                    class="mt-[9px] text-12 leading-[1.8] font-semibold opacity-80"
-                  >
-                    Minutes
-                  </div>
-                </div>
-                <div class="text-24 leading-[1.25] font-extrabold mx-[20px]">
-                  :
-                </div>
-                <div class="flex flex-col items-center">
-                  <div
-                    class="text-24 leading-[1.25] font-extrabold seconds-container"
-                  >
-                    00
-                  </div>
-                  <div
-                    class="mt-[9px] text-12 leading-[1.8] font-semibold opacity-80"
-                  >
-                    Seconds
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="absolute top-[5%] scale-50 lg:scale-100 lg:top-[10%] left-[-100%] lg:left-0 z-0"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="1110"
-            height="984"
-            viewBox="0 0 1110 984"
-            fill="none"
-          >
-            <g filter="url(#filter0_f_2125_17557)">
-              <path
-                d="M636.359 825.472C376.241 902.79 96.3274 781.02 53.8467 638.104C11.3659 495.187 101.356 300.288 361.474 222.97C490.375 184.655 707.223 114.384 881.523 140.032C1058.95 166.141 926.199 504.126 947.628 576.22C990.109 719.136 896.477 748.154 636.359 825.472Z"
-                fill="#4242d852"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_f_2125_17557"
-                x="-90.2202"
-                y="0.53125"
-                width="1199.57"
-                height="982.973"
-                filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
-              >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="BackgroundImageFix"
-                  result="shape"
-                />
-                <feGaussianBlur
-                  stdDeviation="67"
-                  result="effect1_foregroundBlur_2125_17557"
-                />
-              </filter>
-            </defs>
-          </svg>
-        </div>
-        <div
-          class="border border-dashed border-white/30 my-5 lg:my-[120px] scale-x-[3.5] relative"
-          id="course"
-        ></div>
-        <div class="container relative">
-          <div class="text-center mb-[40px] lg:mb-6">
-            <div
-              class="max-w-[605px] mx-auto text-heading-small lg:text-heading text-white mb-2 lg:mb-3"
-            >
-              Explore other courses and get proven results
-            </div>
-            <div
-              class="max-w-[505px] mx-auto text-small lg:text-xl text-white/80"
-            >
-              Explore our diverse selection of expertly crafted courses that
-              helped countless learners to achieve their goals.
-            </div>
-          </div>
-          <div class="course-accordion">
-            <div
-              class="rounded-[20px] pt-[20px] pb-3 px-2 lg:px-3 bg-white/[0.05]"
-            >
-              <div class="flex items-center lg:flex-row flex-col">
-                <img
-                  class="rounded-lg w-full lg:w-auto"
-                  src="img/exhibitionist/course1.jpg"
-                  alt=""
-                />
-                <div class="max-w-[493px] text-white lg:ml-3">
-                  <div
-                    class="text-20 lg:text-[28px] leading-[1.25] font-bold my-2 lg:my-0"
-                  >
-                    Unlock the secrets of fantasy cricket success
-                  </div>
-                  <div class="text-base opacity-80 mt-[12px] mb-4">
-                    Join our Cricket Fantasy Ace and elevate your fantasy
-                    cricket game to the next level. Learn from the best,
-                    optimize your lineups, and achieve fantasy cricket success.
-                    Enroll now and take advantage of our limited-time offer!
-                  </div>
-                  <div class="flex items-center">
-                    <img src="img/exhibitionist/star-4-6.svg" alt="" />
-                    <div class="text-18 font-semibold ml-[12px] mr-[5px]">
-                      4.6+
-                    </div>
-                    <div class="opacity-80 text-14 font-medium">
-                      (12,421 ratings)
-                    </div>
-                  </div>
-                </div>
-                <div class="gradient-border hidden lg:inline-block"></div>
-                <div class="hidden lg:block">
-                  <div class="flex flex-col text-white items-center">
-                    <div
-                      class="py-1 px-[23px] text-small bg-[#238538] rounded-[9px] max-w-fit"
-                    >
-                      35% OFF
-                    </div>
-                    <div
-                      class="flex items-center gap-[12px] mt-[12px] mb-[20px]"
-                    >
-                      <div class="text-heading-small">₹299</div>
-                      <div
-                        class="text-base font-normal line-through opacity-50"
-                      >
-                        ₹1,999
-                      </div>
-                    </div>
-                    <div class="w-full lg:w-[234px]">
-                      <a
-                        href="#!"
-                        class="button rounded-[32px] py-[14px] px-[24px] bg-white w-full inline-block text-[#0C0F12] text-14 leading-[1.0] font-semibold"
-                      >
-                        <div class="relative overflow-hidden">
-                          <span class="button-content">Buy Course</span>
-                          <span class="button-content-hover">Buy Course</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div data-accordion-container>
-                <div class="accordion-block">
-                  <div class="single-accordion active bg-white/[0.06]">
-                    <button
-                      class="accordion-trigger mt-[20px] py-[20px] px-[20px] flex lg:flex-row flex-col lg:items-center justify-between rounded-[20px] text-white"
-                    >
-                      <div class="text-base font-bold flex w-full lg:w-auto">
-                        Course Content
-                        <span
-                          class="accordion-marker inline-block lg:hidden ml-auto"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <path
-                              d="M6 9L12 15L18 9"
-                              stroke="#ffffff"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="flex items-center">
-                        <div
-                          class="text-verysmall lg:text-base opacity-80 lg:mr-2"
-                        >
-                          5 sections<span
-                            class="inline-block w-[4px] lg:w-1 h-[4px] lg:h-1 rounded-[50%] bg-white/80 mx-[4px] lg:mx-1"
-                          ></span
-                          >16 lectures<span
-                            class="inline-block w-[4px] lg:w-1 h-[4px] lg:h-1 rounded-[50%] bg-white/80 mx-[4px] lg:mx-1"
-                          ></span
-                          >3h 25m total length
-                        </div>
-                        <span class="accordion-marker hidden lg:inline-block">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <path
-                              d="M6 9L12 15L18 9"
-                              stroke="#ffffff"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                    </button>
-                    <div class="accordion-answer">
-                      <div class="answer-wrapper">
-                        <div class="mt-0" data-accordion-container2>
-                          <div class="accordion-block">
-                            <div
-                              class="single-accordion2 mb-2 active text-white"
-                            >
-                              <button
-                                class="accordion-trigger2 flex items-center justify-between w-full"
-                              >
-                                <div class="flex items-start lg:items-center">
-                                  <span class="accordion-marker">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                    >
-                                      <path
-                                        d="M6 9L12 15L18 9"
-                                        stroke="#ffffff"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  </span>
-                                  <div class="ml-[12px] text-left">
-                                    Introduction to Fantasy Cricket League
-                                  </div>
-                                </div>
-                                <div
-                                  class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                >
-                                  3 lectures<span
-                                    class="inline-block w-1 h-1 rounded-[50%] bg-white/80 mx-1"
-                                  ></span
-                                  >54m total length
-                                </div>
-                              </button>
-                              <div class="accordion-answer2">
-                                <div class="answer-wrapper">
-                                  <ul>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Creating fantasy sports account
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        32:24 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Navigating the platform
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        16:19 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Identifying & Joining league
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        08:13 mins
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="single-accordion2 mb-2 text-white">
-                              <button
-                                class="accordion-trigger2 flex items-center justify-between w-full"
-                              >
-                                <div class="flex items-start lg:items-center">
-                                  <span class="accordion-marker">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                    >
-                                      <path
-                                        d="M6 9L12 15L18 9"
-                                        stroke="#ffffff"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  </span>
-                                  <div class="ml-[12px] text-left">
-                                    Team Selection and Strategy
-                                  </div>
-                                </div>
-                                <div
-                                  class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                >
-                                  1 lecture<span
-                                    class="inline-block w-1 h-1 rounded-[50%] bg-white/80 mx-1"
-                                  ></span
-                                  >24m total length
-                                </div>
-                              </button>
-                              <div class="accordion-answer2">
-                                <div class="answer-wrapper">
-                                  <ul>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Creating fantasy sports account
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        32:24 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Navigating the platform
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        16:19 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Identifying & Joining league
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        08:13 mins
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="single-accordion2 mb-2 text-white">
-                              <button
-                                class="accordion-trigger2 flex items-center justify-between w-full"
-                              >
-                                <div class="flex items-start lg:items-center">
-                                  <span class="accordion-marker">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                    >
-                                      <path
-                                        d="M6 9L12 15L18 9"
-                                        stroke="#ffffff"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  </span>
-                                  <div class="ml-[12px] text-left">
-                                    Scoring and Points System
-                                  </div>
-                                </div>
-                                <div
-                                  class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                >
-                                  8 lectures<span
-                                    class="inline-block w-1 h-1 rounded-[50%] bg-white/80 mx-1"
-                                  ></span
-                                  >1h 25m total length
-                                </div>
-                              </button>
-                              <div class="accordion-answer2">
-                                <div class="answer-wrapper">
-                                  <ul>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Creating fantasy sports account
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        32:24 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Navigating the platform
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        16:19 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Identifying & Joining league
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        08:13 mins
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="single-accordion2 mb-2 text-white">
-                              <button
-                                class="accordion-trigger2 flex items-center justify-between w-full"
-                              >
-                                <div class="flex items-start lg:items-center">
-                                  <span class="accordion-marker">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                    >
-                                      <path
-                                        d="M6 9L12 15L18 9"
-                                        stroke="#ffffff"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  </span>
-                                  <div class="ml-[12px] text-left">
-                                    Winning Strategies
-                                  </div>
-                                </div>
-                                <div
-                                  class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                >
-                                  2 lectures<span
-                                    class="inline-block w-1 h-1 rounded-[50%] bg-white/80 mx-1"
-                                  ></span
-                                  >36m total length
-                                </div>
-                              </button>
-                              <div class="accordion-answer2">
-                                <div class="answer-wrapper">
-                                  <ul>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Creating fantasy sports account
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        32:24 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Navigating the platform
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        16:19 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Identifying & Joining league
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        08:13 mins
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="single-accordion2 mb-2 text-white">
-                              <button
-                                class="accordion-trigger2 flex items-center justify-between w-full"
-                              >
-                                <div class="flex items-start lg:items-center">
-                                  <span class="accordion-marker">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                    >
-                                      <path
-                                        d="M6 9L12 15L18 9"
-                                        stroke="#ffffff"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  </span>
-                                  <div class="ml-[12px] text-left">
-                                    Conclusion
-                                  </div>
-                                </div>
-                                <div
-                                  class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                >
-                                  2 lectures<span
-                                    class="inline-block w-1 h-1 rounded-[50%] bg-white/80 mx-1"
-                                  ></span
-                                  >54m total length
-                                </div>
-                              </button>
-                              <div class="accordion-answer2">
-                                <div class="answer-wrapper">
-                                  <ul>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Creating fantasy sports account
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        32:24 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Navigating the platform
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        16:19 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Identifying & Joining league
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        08:13 mins
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="gradient-border inline-block lg:hidden"></div>
-              <div class="block lg:hidden">
-                <div class="flex flex-col text-white items-center">
-                  <div
-                    class="flex items-center gap-[12px] mt-[12px] mb-[20px] justify-between w-full"
-                  >
-                    <div class="text-heading-small">₹299</div>
-                    <div class="text-base font-normal line-through opacity-50">
-                      ₹1,999
-                    </div>
-                    <div
-                      class="ml-auto py-1 px-[23px] text-small bg-[#238538] rounded-[9px] max-w-fit"
-                    >
-                      35% OFF
-                    </div>
-                  </div>
-                  <div class="w-full lg:w-[234px]">
-                    <a
-                      href="#!"
-                      class="button rounded-[32px] py-[14px] px-[24px] bg-white w-full inline-block text-[#0C0F12] text-14 leading-[1.0] font-semibold"
-                    >
-                      <div class="relative overflow-hidden">
-                        <span class="button-content">Buy Course</span>
-                        <span class="button-content-hover">Buy Course</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="rounded-[20px] pt-[20px] pb-3 px-2 lg:px-3 bg-white/[0.05] mt-3 lg:mt-4"
-            >
-              <div class="flex items-center lg:flex-row flex-col">
-                <img
-                  class="rounded-lg w-full lg:w-auto"
-                  src="img/exhibitionist/course2.jpg"
-                  alt=""
-                />
-                <div class="max-w-[493px] text-white lg:ml-3">
-                  <div
-                    class="text-20 lg:text-[28px] leading-[1.25] font-bold my-2 lg:my-0"
-                  >
-                    Master the art of team selection: cricket fantasy
-                  </div>
-                  <div class="text-base opacity-80 mt-[12px] mb-4">
-                    Become a Cricket Fantasy Strategist with our advanced
-                    course. From player analysis to insider strategies, this
-                    course equips you with the tools for fantasy cricket
-                    dominance. Don't miss out – enroll today and enjoy our
-                    limited-time discount
-                  </div>
-                  <div class="flex items-center">
-                    <img src="img/exhibitionist/star-4-6.svg" alt="" />
-                    <div class="text-18 font-semibold ml-[12px] mr-[5px]">
-                      4.6+
-                    </div>
-                    <div class="opacity-80 text-14 font-medium">
-                      (12,421 ratings)
-                    </div>
-                  </div>
-                </div>
-                <div class="gradient-border hidden lg:inline-block"></div>
-                <div class="hidden lg:block">
-                  <div class="flex flex-col text-white items-center">
-                    <div
-                      class="py-1 px-[23px] text-small bg-[#238538] rounded-[9px] max-w-fit"
-                    >
-                      35% OFF
-                    </div>
-                    <div
-                      class="flex items-center gap-[12px] mt-[12px] mb-[20px]"
-                    >
-                      <div class="text-heading-small">₹299</div>
-                      <div
-                        class="text-base font-normal line-through opacity-50"
-                      >
-                        ₹1,999
-                      </div>
-                    </div>
-                    <div class="w-full lg:w-[234px]">
-                      <a
-                        href="#!"
-                        class="button rounded-[32px] py-[14px] px-[24px] bg-white w-full inline-block text-[#0C0F12] text-14 leading-[1.0] font-semibold"
-                      >
-                        <div class="relative overflow-hidden">
-                          <span class="button-content">Buy Course</span>
-                          <span class="button-content-hover">Buy Course</span>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div data-accordion-container>
-                <div class="accordion-block">
-                  <div class="single-accordion active bg-white/[0.06]">
-                    <button
-                      class="accordion-trigger mt-[20px] py-[20px] px-[20px] flex lg:flex-row flex-col lg:items-center justify-between rounded-[20px] text-white"
-                    >
-                      <div class="text-base font-bold flex w-full lg:w-auto">
-                        Course Content
-                        <span
-                          class="accordion-marker inline-block lg:hidden ml-auto"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <path
-                              d="M6 9L12 15L18 9"
-                              stroke="#ffffff"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="flex items-center">
-                        <div
-                          class="text-verysmall lg:text-base opacity-80 lg:mr-2"
-                        >
-                          5 sections<span
-                            class="inline-block w-[4px] lg:w-1 h-[4px] lg:h-1 rounded-[50%] bg-white/80 mx-[4px] lg:mx-1"
-                          ></span
-                          >16 lectures<span
-                            class="inline-block w-[4px] lg:w-1 h-[4px] lg:h-1 rounded-[50%] bg-white/80 mx-[4px] lg:mx-1"
-                          ></span
-                          >3h 25m total length
-                        </div>
-                        <span class="accordion-marker hidden lg:inline-block">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                          >
-                            <path
-                              d="M6 9L12 15L18 9"
-                              stroke="#ffffff"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </svg>
-                        </span>
-                      </div>
-                    </button>
-                    <div class="accordion-answer">
-                      <div class="answer-wrapper">
-                        <div class="mt-0" data-accordion-container2>
-                          <div class="accordion-block">
-                            <div
-                              class="single-accordion2 mb-2 active text-white"
-                            >
-                              <button
-                                class="accordion-trigger2 flex items-center justify-between w-full"
-                              >
-                                <div class="flex items-start lg:items-center">
-                                  <span class="accordion-marker">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                    >
-                                      <path
-                                        d="M6 9L12 15L18 9"
-                                        stroke="#ffffff"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  </span>
-                                  <div class="ml-[12px] text-left">
-                                    Introduction to Fantasy Cricket League
-                                  </div>
-                                </div>
-                                <div
-                                  class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                >
-                                  3 lectures<span
-                                    class="inline-block w-1 h-1 rounded-[50%] bg-white/80 mx-1"
-                                  ></span
-                                  >54m total length
-                                </div>
-                              </button>
-                              <div class="accordion-answer2">
-                                <div class="answer-wrapper">
-                                  <ul>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Creating fantasy sports account
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        32:24 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Navigating the platform
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        16:19 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Identifying & Joining league
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        08:13 mins
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="single-accordion2 mb-2 text-white">
-                              <button
-                                class="accordion-trigger2 flex items-center justify-between w-full"
-                              >
-                                <div class="flex items-start lg:items-center">
-                                  <span class="accordion-marker">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                    >
-                                      <path
-                                        d="M6 9L12 15L18 9"
-                                        stroke="#ffffff"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  </span>
-                                  <div class="ml-[12px] text-left">
-                                    Team Selection and Strategy
-                                  </div>
-                                </div>
-                                <div
-                                  class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                >
-                                  1 lecture<span
-                                    class="inline-block w-1 h-1 rounded-[50%] bg-white/80 mx-1"
-                                  ></span
-                                  >24m total length
-                                </div>
-                              </button>
-                              <div class="accordion-answer2">
-                                <div class="answer-wrapper">
-                                  <ul>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Creating fantasy sports account
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        32:24 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Navigating the platform
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        16:19 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Identifying & Joining league
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        08:13 mins
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="single-accordion2 mb-2 text-white">
-                              <button
-                                class="accordion-trigger2 flex items-center justify-between w-full"
-                              >
-                                <div class="flex items-start lg:items-center">
-                                  <span class="accordion-marker">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                    >
-                                      <path
-                                        d="M6 9L12 15L18 9"
-                                        stroke="#ffffff"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  </span>
-                                  <div class="ml-[12px] text-left">
-                                    Scoring and Points System
-                                  </div>
-                                </div>
-                                <div
-                                  class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                >
-                                  8 lectures<span
-                                    class="inline-block w-1 h-1 rounded-[50%] bg-white/80 mx-1"
-                                  ></span
-                                  >1h 25m total length
-                                </div>
-                              </button>
-                              <div class="accordion-answer2">
-                                <div class="answer-wrapper">
-                                  <ul>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Creating fantasy sports account
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        32:24 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Navigating the platform
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        16:19 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Identifying & Joining league
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        08:13 mins
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="single-accordion2 mb-2 text-white">
-                              <button
-                                class="accordion-trigger2 flex items-center justify-between w-full"
-                              >
-                                <div class="flex items-start lg:items-center">
-                                  <span class="accordion-marker">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                    >
-                                      <path
-                                        d="M6 9L12 15L18 9"
-                                        stroke="#ffffff"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  </span>
-                                  <div class="ml-[12px] text-left">
-                                    Winning Strategies
-                                  </div>
-                                </div>
-                                <div
-                                  class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                >
-                                  2 lectures<span
-                                    class="inline-block w-1 h-1 rounded-[50%] bg-white/80 mx-1"
-                                  ></span
-                                  >36m total length
-                                </div>
-                              </button>
-                              <div class="accordion-answer2">
-                                <div class="answer-wrapper">
-                                  <ul>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Creating fantasy sports account
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        32:24 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Navigating the platform
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        16:19 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Identifying & Joining league
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        08:13 mins
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="single-accordion2 mb-2 text-white">
-                              <button
-                                class="accordion-trigger2 flex items-center justify-between w-full"
-                              >
-                                <div class="flex items-start lg:items-center">
-                                  <span class="accordion-marker">
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      width="24"
-                                      height="24"
-                                      viewBox="0 0 24 24"
-                                      fill="none"
-                                    >
-                                      <path
-                                        d="M6 9L12 15L18 9"
-                                        stroke="#ffffff"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                      />
-                                    </svg>
-                                  </span>
-                                  <div class="ml-[12px] text-left">
-                                    Conclusion
-                                  </div>
-                                </div>
-                                <div
-                                  class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                >
-                                  2 lectures<span
-                                    class="inline-block w-1 h-1 rounded-[50%] bg-white/80 mx-1"
-                                  ></span
-                                  >54m total length
-                                </div>
-                              </button>
-                              <div class="accordion-answer2">
-                                <div class="answer-wrapper">
-                                  <ul>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Creating fantasy sports account
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        32:24 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Navigating the platform
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        16:19 mins
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <a href="#!">
-                                        <img
-                                          class="mr-1"
-                                          src="img/exhibitionist/play.svg"
-                                          alt=""
-                                        />Identifying & Joining league
-                                      </a>
-                                      <div
-                                        class="text-base opacity-80 hidden lg:flex items-center ml-auto"
-                                      >
-                                        08:13 mins
-                                      </div>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="gradient-border inline-block lg:hidden"></div>
-              <div class="block lg:hidden">
-                <div class="flex flex-col text-white items-center">
-                  <div
-                    class="flex items-center gap-[12px] mt-[12px] mb-[20px] justify-between w-full"
-                  >
-                    <div class="text-heading-small">₹299</div>
-                    <div class="text-base font-normal line-through opacity-50">
-                      ₹1,999
-                    </div>
-                    <div
-                      class="ml-auto py-1 px-[23px] text-small bg-[#238538] rounded-[9px] max-w-fit"
-                    >
-                      35% OFF
-                    </div>
-                  </div>
-                  <div class="w-full lg:w-[234px]">
-                    <a
-                      href="#!"
-                      class="button rounded-[32px] py-[14px] px-[24px] bg-white w-full inline-block text-[#0C0F12] text-14 leading-[1.0] font-semibold"
-                    >
-                      <div class="relative overflow-hidden">
-                        <span class="button-content">Buy Course</span>
-                        <span class="button-content-hover">Buy Course</span>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="py-5 lg:py-[80px]">
-        <div class="container">
-          <div class="flex items-center lg:flex-row flex-col-reverse">
-            <div class="w-full lg:w-[55%] text-black mt-[40px] md:mt-0">
-              <div class="text-heading-small lg:text-heading">
-                Receive Your Accredited Certificate of Course
-              </div>
-              <div
-                class="text-small lg:text-xl mt-2 lg:mt-3 mb-4 lg:mb-5 text-[#888888]"
-              >
-                Join our course, put in the work, and proudly display your
-                achievement to the world, knowing that it's backed by our
-                reputation for quality education and expertise.
-              </div>
-              <div class="flex items-center gap-[12px]">
-                <div class="w-[164px] md:w-[190px]">
-                  <a
-                    href="#!"
-                    class="button rounded-[32px] py-[18px] px-[32px] bg-[#245AEC] w-full inline-block text-white text-12 md:text-14 leading-[1.0] font-semibold"
-                  >
-                    <div class="relative overflow-hidden">
-                      <span class="button-content">Buy Course</span>
-                      <span class="button-content-hover">Buy Course</span>
-                    </div>
-                  </a>
-                </div>
-                <div class="w-[164px] md:w-[190px]">
-                  <a
-                    href="#!"
-                    class="button rounded-[32px] border border-[#888888]/20 py-[18px] px-[32px] bg-white w-full inline-block text-black text-12 md:text-14 leading-[1.0] font-semibold"
-                  >
-                    <div class="relative overflow-hidden">
-                      <span class="button-content">Book a demo call</span>
-                      <span class="button-content-hover">Book a demo call</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="flex items-center text-black mt-[40px] lg:mt-6 flex-wrap"
-              >
-                <div class="flex items-center w-full md:w-auto mb-3 md:mb-0">
-                  <div
-                    class="flex flex-col items-center min-w-[163px] md:min-w-fit"
-                  >
-                    <div class="text-[28px] font-bold">4+</div>
-                    <div
-                      class="text-verysmall font-medium text-[#888888] mt-[9px]"
-                    >
-                      Modules
-                    </div>
-                  </div>
-                  <div class="w-[1px] h-[30px] bg-black/30 mx-1 md:mx-4"></div>
-                  <div
-                    class="flex flex-col items-center min-w-[163px] md:min-w-fit"
-                  >
-                    <div class="text-[28px] font-bold">16+</div>
-                    <div
-                      class="text-verysmall font-medium text-[#888888] mt-[9px]"
-                    >
-                      Hours of content
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="w-[1px] h-[30px] bg-black/30 mx-4 hidden md:inline-block"
-                ></div>
-                <div class="flex items-center w-full md:w-auto">
-                  <div
-                    class="flex flex-col items-center min-w-[163px] md:min-w-fit"
-                  >
-                    <div class="text-[28px] font-bold">242+</div>
-                    <div
-                      class="text-verysmall font-medium text-[#888888] mt-[9px]"
-                    >
-                      Positive Reviews
-                    </div>
-                  </div>
-                  <div class="w-[1px] h-[30px] bg-black/30 mx-1 md:mx-4"></div>
-                  <div
-                    class="flex flex-col items-center min-w-[163px] md:min-w-fit"
-                  >
-                    <div class="text-[28px] font-bold">500+</div>
-                    <div
-                      class="text-verysmall font-medium text-[#888888] mt-[9px]"
-                    >
-                      Total Course Graduates
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="w-full lg:w-[45%]">
-              <div>
-                <img
-                  class="ml-[-15px] md:ml-0"
-                  src="img/exhibitionist/certificate.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- table -->
-      <section class="py-5 lg:py-[80px] bg-white">
-        <div class="container text-black">
-          <div class="text-center">
-            <div
-              class="text-heading-small lg:text-heading max-w-[505px] mx-auto"
-            >
-              Our Exclusive Learning Experience
-            </div>
-            <div
-              class="text-small lg:text-xl text-[#888888] max-w-[721px] mx-auto mt-2 lg:mt-3 mb-[40px] lg:mb-6"
-            >
-              Embark on a transformative learning adventure. Discover new
-              horizons, expand your skills, and shape your future with our
-              exclusive learning experience
-            </div>
-          </div>
-          <table>
-            <tbody>
-              <tr>
-                <th></th>
-                <th>Udemy</th>
-                <th>Coursera</th>
-                <th>RiGi</th>
-              </tr>
-              <tr>
-                <td>Instructor Quality</td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-pass.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-fail.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-pass.svg"
-                    alt=""
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>Interactive Learning</td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-fail.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-fail.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-pass.svg"
-                    alt=""
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>Accredited Certificates</td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-fail.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-pass.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-pass.svg"
-                    alt=""
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>Competitive Pricing (INR)</td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-fail.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-pass.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-pass.svg"
-                    alt=""
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>Money-Back Guarantee</td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-pass.svg"
-                    alt=""
-                  />
-                </td>
-                <td>
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-fail.svg"
-                    alt=""
-                  />
-                </td>
-                <td class="last-cell">
-                  <img
-                    class="mx-auto"
-                    src="img/exhibitionist/verify-pass.svg"
-                    alt=""
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="py-5 lg:py-[120px] bg-[#E0E7FF]">
-        <div class="container text-black">
-          <div class="text-center max-w-[610px] mx-auto">
-            <div class="text-heading-small lg:text-heading">
-              Explore my Youtube channel for free resources
-            </div>
-            <div class="text-small lg:text-xl text-[#888888] mt-2 lg:mt-3">
-              Read what our satisfied clients have to say about their experience
-              with our fantasy sport services.
-            </div>
-            <div
-              class="w-[164px] md:w-[190px] mx-auto mt-4 lg:mt-5 mb-[40px] lg:mb-6 hidden lg:block"
-            >
-              <a
-                href="#!"
-                class="button rounded-[32px] py-[18px] px-[32px] bg-[#245AEC] w-full inline-block text-white text-12 md:text-14 leading-[1.0] font-semibold"
-              >
-                <div class="relative overflow-hidden">
-                  <span class="button-content">View all</span>
-                  <span class="button-content-hover">View all</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-[20px] mt-[40px] lg:mt-0"
-          >
-            <div class="rounded-[20px] bg-white px-2 py-2 lg:px-3 lg:py-3">
-              <div
-                class="flex items-center lg:flex-row flex-col gap-2 lg:gap-3"
-              >
-                <img
-                  class="rounded-2xl w-full lg:w-auto"
-                  src="img/exhibitionist/channel1.jpg"
-                  alt=""
-                />
-                <div class="text-black">
-                  <div class="text-base font-bold">
-                    How to create teams for Small League using my secret success
-                  </div>
-                  <div
-                    class="mt-1 lg:mt-[12px] mb-3 text-12 font-medium leading-[1.6] text-[#888888]"
-                  >
-                    By leveraging our network of renowned organizations, you'll
-                    have access to exclusive job offers from industry-leading
-                    employers.
-                  </div>
-                  <div class="flex items-center">
-                    <a href="#!" class="flex items-center">
-                      <img src="img/exhibitionist/youtube.svg" alt="" />
-                      <div class="text-14 font-semibold ml-[10px] mr-[20px]">
-                        Watch now
-                      </div>
-                    </a>
-                    <img src="img/exhibitionist/thumbs-up.svg" alt="" />
-                    <div class="text-14 font-semibold ml-[5px]">12.3K</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="rounded-[20px] bg-white px-2 py-2 lg:px-3 lg:py-3">
-              <div
-                class="flex items-center lg:flex-row flex-col gap-2 lg:gap-3"
-              >
-                <img
-                  class="rounded-2xl w-full lg:w-auto"
-                  src="img/exhibitionist/channel2.jpg"
-                  alt=""
-                />
-                <div class="text-black">
-                  <div class="text-base font-bold">
-                    How to create teams for Small League using my secret success
-                  </div>
-                  <div
-                    class="mt-1 lg:mt-[12px] mb-3 text-12 font-medium leading-[1.6] text-[#888888]"
-                  >
-                    By leveraging our network of renowned organizations, you'll
-                    have access to exclusive job offers from industry-leading
-                    employers.
-                  </div>
-                  <div class="flex items-center">
-                    <a href="#!" class="flex items-center">
-                      <img src="img/exhibitionist/youtube.svg" alt="" />
-                      <div class="text-14 font-semibold ml-[10px] mr-[20px]">
-                        Watch now
-                      </div>
-                    </a>
-                    <img src="img/exhibitionist/thumbs-up.svg" alt="" />
-                    <div class="text-14 font-semibold ml-[5px]">8.5K</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="rounded-[20px] bg-white px-2 py-2 lg:px-3 lg:py-3">
-              <div
-                class="flex items-center lg:flex-row flex-col gap-2 lg:gap-3"
-              >
-                <img
-                  class="rounded-2xl w-full lg:w-auto"
-                  src="img/exhibitionist/channel3.jpg"
-                  alt=""
-                />
-                <div class="text-black">
-                  <div class="text-base font-bold">
-                    How to create teams for Small League using my secret success
-                  </div>
-                  <div
-                    class="mt-1 lg:mt-[12px] mb-3 text-12 font-medium leading-[1.6] text-[#888888]"
-                  >
-                    By leveraging our network of renowned organizations, you'll
-                    have access to exclusive job offers from industry-leading
-                    employers.
-                  </div>
-                  <div class="flex items-center">
-                    <a href="#!" class="flex items-center">
-                      <img src="img/exhibitionist/youtube.svg" alt="" />
-                      <div class="text-14 font-semibold ml-[10px] mr-[20px]">
-                        Watch now
-                      </div>
-                    </a>
-                    <img src="img/exhibitionist/thumbs-up.svg" alt="" />
-                    <div class="text-14 font-semibold ml-[5px]">11.7K</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="rounded-[20px] bg-white px-2 py-2 lg:px-3 lg:py-3">
-              <div
-                class="flex items-center lg:flex-row flex-col gap-2 lg:gap-3"
-              >
-                <img
-                  class="rounded-2xl w-full lg:w-auto"
-                  src="img/exhibitionist/channel4.jpg"
-                  alt=""
-                />
-                <div class="text-black">
-                  <div class="text-base font-bold">
-                    How to create teams for Small League using my secret success
-                  </div>
-                  <div
-                    class="mt-1 lg:mt-[12px] mb-3 text-12 font-medium leading-[1.6] text-[#888888]"
-                  >
-                    By leveraging our network of renowned organizations, you'll
-                    have access to exclusive job offers from industry-leading
-                    employers.
-                  </div>
-                  <div class="flex items-center">
-                    <a href="#!" class="flex items-center">
-                      <img src="img/exhibitionist/youtube.svg" alt="" />
-                      <div class="text-14 font-semibold ml-[10px] mr-[20px]">
-                        Watch now
-                      </div>
-                    </a>
-                    <img src="img/exhibitionist/thumbs-up.svg" alt="" />
-                    <div class="text-14 font-semibold ml-[5px]">2.3K</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="w-[164px] md:w-[190px] mx-auto mt-4 lg:mt-5 lg:mb-6 block lg:hidden"
-          >
-            <a
-              href="#!"
-              class="button rounded-[32px] py-[18px] px-[32px] bg-[#245AEC] w-full inline-block text-white text-12 md:text-14 leading-[1.0] font-semibold"
-            >
-              <div class="relative overflow-hidden">
-                <span class="button-content">View all</span>
-                <span class="button-content-hover">View all</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section
-        class="py-5 lg:py-[120px] bg-white testimonial-section overflow-hidden"
+        class="py-5 lg:py-[120px] testimonial-section overflow-hidden"
         id="testimonials"
       >
         <div class="container">
-          <div class="text-center">
-            <div class="text-heading-small lg:text-heading">
-              Customer experiences, real voices
-            </div>
-            <div
-              class="max-w-[610px] mx-auto text-small lg:text-xl text-[#888888] mt-2 lg:mt-3"
-            >
-              Read what our satisfied clients have to say about their experience
-              with our fantasy sport services.
-            </div>
-          </div>
-          <div class="hidden lg:block">
+          <h1 class="text-[40px] text-center text-white font-josefin">
+            Testimonials
+          </h1>
+          <div class="">
             <div class="testimonial-slider mt-[40px] lg:mt-6">
               <div class="item">
-                <div class="bg-[#F9FAFB] px-4 py-4 rounded-[20px] h-full">
-                  <img src="img/exhibitionist/quotes.svg" alt="" />
-                  <div
-                    class="text-small lg:text-medium text-[#232423] mt-2 lg:my-3"
-                  >
-                    Game-Changing Guidance!
-                  </div>
-                  <div class="text-verysmall lg:text-base text-[#888888]">
-                    "I can't express how transformative my experience has been
-                    learning from this teacher. Their strategic guidance and
-                    player analysis have been game-changing. Before, I was
-                    struggling in my fantasy sports leagues, but now I'm
-                    consistently at the top of the standings."
-                  </div>
-                  <div class="flex items-center gap-[12px] mt-4 lg:mt-5">
-                    <img
-                      class="w-4 h-4 lg:w-5 lg:h-5"
-                      src="img/exhibitionist/customer1.png"
-                      alt=""
-                    />
-                    <div class="flex flex-col">
-                      <div class="text-verysmall lg:text-base font-semibold">
-                        Jessica W.
-                      </div>
-                      <div
-                        class="text-[10px] leading-[1.6] lg:text-verysmall text-[#888888]"
-                      >
-                        Fantasy Sport Player
-                      </div>
-                    </div>
-                  </div>
+                <div class="px-4 py-4 rounded-[20px] h-full">
+                  <img src="img/quotes.svg" class="w-[30px]" alt="" />
+                  <p
+                   class="text-roseGold text-18 mt-4">
+                   Let’s bake love has the best cakes in town. Their Nutella ferrero is my absolute favourite. The chef takes special consideration to any special requests and handles each order with extreme care and hygiene.
+                  </p>
+                  <p class="text-white text-18"> - Rishabh</p>
                 </div>
               </div>
               <div class="item">
-                <div class="bg-[#F9FAFB] px-4 py-4 rounded-[20px] h-full">
-                  <img src="img/exhibitionist/quotes.svg" alt="" />
-                  <div
-                    class="text-small lg:text-medium text-[#232423] mt-2 lg:my-3"
-                  >
-                    Rookie to Champion
-                  </div>
-                  <div class="text-verysmall lg:text-base text-[#888888]">
-                    "Learning from this teacher has been a winning experience.
-                    Their strategic guidance and player analysis have helped me
-                    make the right picks and win consistently. I'm a proud
-                    student!"
-                  </div>
-                  <div class="flex items-center gap-[12px] mt-4 lg:mt-5">
-                    <img
-                      class="w-4 h-4 lg:w-5 lg:h-5"
-                      src="img/exhibitionist/customer2.png"
-                      alt=""
-                    />
-                    <div class="flex flex-col">
-                      <div class="text-verysmall lg:text-base font-semibold">
-                        Lisa R.
-                      </div>
-                      <div
-                        class="text-[10px] leading-[1.6] lg:text-verysmall text-[#888888]"
-                      >
-                        Fantasy Sport Player
-                      </div>
-                    </div>
-                  </div>
+                <div class="px-4 py-4 rounded-[20px] h-full">
+                  <img src="img/quotes.svg" class="w-[30px]" alt="" />
+                  <p
+                   class="text-roseGold text-18 mt-4">
+                   Let’s bake love has the best cakes in town. Their Nutella ferrero is my absolute favourite. The chef takes special consideration to any special requests and handles each order with extreme care and hygiene.
+                  </p>
+                  <p class="text-white text-18"> - Rishabh</p>
                 </div>
               </div>
               <div class="item">
-                <div class="bg-[#F9FAFB] px-4 py-4 rounded-[20px] h-full">
-                  <img src="img/exhibitionist/quotes.svg" alt="" />
-                  <div
-                    class="text-small lg:text-medium text-[#232423] mt-2 lg:my-3"
-                  >
-                    The Fantasy Guru You Need!
-                  </div>
-                  <div class="text-verysmall lg:text-base text-[#888888]">
-                    "I can't express how transformative my experience has been
-                    learning from this teacher. Their strategic guidance and
-                    player analysis have been game-changing. Before, I was
-                    struggling in my fantasy sports leagues, but now I'm
-                    consistently at the top of the standings."
-                  </div>
-                  <div class="flex items-center gap-[12px] mt-4 lg:mt-5">
-                    <img
-                      class="w-4 h-4 lg:w-5 lg:h-5"
-                      src="img/exhibitionist/customer3.png"
-                      alt=""
-                    />
-                    <div class="flex flex-col">
-                      <div class="text-verysmall lg:text-base font-semibold">
-                        Joseph Dmello
-                      </div>
-                      <div
-                        class="text-[10px] leading-[1.6] lg:text-verysmall text-[#888888]"
-                      >
-                        Fantasy Sport Player
-                      </div>
-                    </div>
-                  </div>
+                <div class="px-4 py-4 rounded-[20px] h-full">
+                  <img src="img/quotes.svg" class="w-[30px]" alt="" />
+                  <p
+                   class="text-roseGold text-18 mt-4">
+                   Let’s bake love has the best cakes in town. Their Nutella ferrero is my absolute favourite. The chef takes special consideration to any special requests and handles each order with extreme care and hygiene.
+                  </p>
+                  <p class="text-white text-18"> - Rishabh</p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="grid gap-3 mt-[40px] lg:mt-6 lg:hidden">
-            <div class="item">
-              <div class="bg-[#F9FAFB] px-4 py-4 rounded-[20px] h-full">
-                <img src="img/exhibitionist/quotes.svg" alt="" />
-                <div
-                  class="text-small lg:text-medium text-[#232423] mt-2 lg:my-3"
-                >
-                  Game-Changing Guidance!
-                </div>
-                <div class="text-verysmall lg:text-base text-[#888888]">
-                  "I can't express how transformative my experience has been
-                  learning from this teacher. Their strategic guidance and
-                  player analysis have been game-changing. Before, I was
-                  struggling in my fantasy sports leagues, but now I'm
-                  consistently at the top of the standings."
-                </div>
-                <div class="flex items-center gap-[12px] mt-4 lg:mt-5">
-                  <img
-                    class="w-4 h-4 lg:w-5 lg:h-5"
-                    src="img/exhibitionist/customer1.png"
-                    alt=""
-                  />
-                  <div class="flex flex-col">
-                    <div class="text-verysmall lg:text-base font-semibold">
-                      Jessica W.
-                    </div>
-                    <div
-                      class="text-[10px] leading-[1.6] lg:text-verysmall text-[#888888]"
-                    >
-                      Fantasy Sport Player
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="bg-[#F9FAFB] px-4 py-4 rounded-[20px] h-full">
-                <img src="img/exhibitionist/quotes.svg" alt="" />
-                <div
-                  class="text-small lg:text-medium text-[#232423] mt-2 lg:my-3"
-                >
-                  Rookie to Champion
-                </div>
-                <div class="text-verysmall lg:text-base text-[#888888]">
-                  "Learning from this teacher has been a winning experience.
-                  Their strategic guidance and player analysis have helped me
-                  make the right picks and win consistently. I'm a proud
-                  student!"
-                </div>
-                <div class="flex items-center gap-[12px] mt-4 lg:mt-5">
-                  <img
-                    class="w-4 h-4 lg:w-5 lg:h-5"
-                    src="img/exhibitionist/customer2.png"
-                    alt=""
-                  />
-                  <div class="flex flex-col">
-                    <div class="text-verysmall lg:text-base font-semibold">
-                      Lisa R.
-                    </div>
-                    <div
-                      class="text-[10px] leading-[1.6] lg:text-verysmall text-[#888888]"
-                    >
-                      Fantasy Sport Player
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="bg-[#F9FAFB] px-4 py-4 rounded-[20px] h-full">
-                <img src="img/exhibitionist/quotes.svg" alt="" />
-                <div
-                  class="text-small lg:text-medium text-[#232423] mt-2 lg:my-3"
-                >
-                  The Fantasy Guru You Need!
-                </div>
-                <div class="text-verysmall lg:text-base text-[#888888]">
-                  "I can't express how transformative my experience has been
-                  learning from this teacher. Their strategic guidance and
-                  player analysis have been game-changing. Before, I was
-                  struggling in my fantasy sports leagues, but now I'm
-                  consistently at the top of the standings."
-                </div>
-                <div class="flex items-center gap-[12px] mt-4 lg:mt-5">
-                  <img
-                    class="w-4 h-4 lg:w-5 lg:h-5"
-                    src="img/exhibitionist/customer3.png"
-                    alt=""
-                  />
-                  <div class="flex flex-col">
-                    <div class="text-verysmall lg:text-base font-semibold">
-                      Joseph Dmello
-                    </div>
-                    <div
-                      class="text-[10px] leading-[1.6] lg:text-verysmall text-[#888888]"
-                    >
-                      Fantasy Sport Player
-                    </div>
-                  </div>
+              <div class="item">
+                <div class="px-4 py-4 rounded-[20px] h-full">
+                  <img src="img/quotes.svg" class="w-[30px]" alt="" />
+                  <p
+                   class="text-roseGold text-18 mt-4">
+                   Let’s bake love has the best cakes in town. Their Nutella ferrero is my absolute favourite. The chef takes special consideration to any special requests and handles each order with extreme care and hygiene.
+                  </p>
+                  <p class="text-white text-18"> - Rishabh</p>
                 </div>
               </div>
             </div>
@@ -2655,311 +575,7 @@
         </div>
       </section>
 
-      <!-- blog -->
-      <section class="pb-5 lg:pt-[40px] lg:pb-[160px]" id="blogs">
-        <div class="container">
-          <div
-            class="text-center font-semibold text-heading-small lg:text-heading text-black"
-          >
-            Explore our blogs
-          </div>
-          <div
-            class="grid lg:grid-cols-3 grid-cols-1 gap-4 lg:gap-[20px] mt-[40px] lg:mt-[62px]"
-          >
-            <a href="#!" class="text-black group">
-              <div class="relative">
-                <img
-                  class="w-full"
-                  src="img/exhibitionist/blogs1.webp"
-                  alt=""
-                />
-                <img
-                  src="img/exhibitionist/blog-arrow.svg"
-                  class="blog-arrow absolute bottom-[-10px] right-[-6px] opacity-0 group-hover:opacity-100 duration-[400ms]"
-                  alt=""
-                />
-              </div>
-              <div
-                class="text-primary/70 text-14 tracking-[2px] leading-[1.7] font-bold mt-3 lg:mt-4"
-              >
-                CAREER &amp; BUSINESS
-              </div>
-              <div
-                class="text-20 lg:text-24 leading-[1.33] tracking-[-0.096px] font-bold mt-1 lg:mt-[12px] mb-2 lg:mb-1"
-              >
-                Accelerate Your Business with Instagram
-              </div>
-              <div
-                class="text-14 lg:text-16 leading-[1.7] lg:leading-[1.5] text-[#888888]"
-              >
-                Learning about leadership and business can be boring. We solve
-                that by making funny comics.
-              </div>
-            </a>
-            <a href="#!" class="text-black group">
-              <div class="relative">
-                <img
-                  class="w-full"
-                  src="img/exhibitionist/blogs2.webp"
-                  alt=""
-                />
-                <img
-                  src="img/exhibitionist/blog-arrow.svg"
-                  class="blog-arrow absolute bottom-[-10px] right-[-6px] opacity-0 group-hover:opacity-100 duration-[400ms]"
-                  alt=""
-                />
-              </div>
-              <div
-                class="text-primary/70 text-14 tracking-[2px] leading-[1.7] font-bold mt-3 lg:mt-4"
-              >
-                CAREER &amp; BUSINESS
-              </div>
-              <div
-                class="text-20 lg:text-24 leading-[1.33] tracking-[-0.096px] font-bold mt-1 lg:mt-[12px] mb-2 lg:mb-1"
-              >
-                Strategies for Adapting Your Business in Dynamic Markets
-              </div>
-              <div
-                class="text-14 lg:text-16 leading-[1.7] lg:leading-[1.5] text-[#888888]"
-              >
-                Learning about leadership and business can be boring. We solve
-                that by making funny comics.
-              </div>
-            </a>
-            <a href="#!" class="text-black group">
-              <div class="relative">
-                <img
-                  class="w-full"
-                  src="img/exhibitionist/blogs2.webp"
-                  alt=""
-                />
-                <img
-                  src="img/exhibitionist/blog-arrow.svg"
-                  class="blog-arrow absolute bottom-[-10px] right-[-6px] opacity-0 group-hover:opacity-100 duration-[400ms]"
-                  alt=""
-                />
-              </div>
-              <div
-                class="text-primary/70 text-14 tracking-[2px] leading-[1.7] font-bold mt-3 lg:mt-4"
-              >
-                CAREER &amp; BUSINESS
-              </div>
-              <div
-                class="text-20 lg:text-24 leading-[1.33] tracking-[-0.096px] font-bold mt-1 lg:mt-[12px] mb-2 lg:mb-1"
-              >
-                The #1 Reason to Start Your Own Business NOW
-              </div>
-              <div
-                class="text-14 lg:text-16 leading-[1.7] lg:leading-[1.5] text-[#888888]"
-              >
-                Learning about leadership and business can be boring. We solve
-                that by making funny comics.
-              </div>
-            </a>
-          </div>
-          <div class="w-[164px] lg:w-[190px] mx-auto mt-4 lg:mt-6">
-            <a
-              href="#!"
-              class="button rounded-[32px] py-[18px] px-[32px] bg-[#245AEC] w-full inline-block text-white text-12 md:text-14 leading-[1.0] font-semibold"
-            >
-              <div class="relative overflow-hidden">
-                <span class="button-content">View all</span>
-                <span class="button-content-hover">View all</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- faq -->
-      <section class="py-5 lg:py-[80px] bg-[#E0E7FF]">
-        <div class="container">
-          <div
-            class="text-center font-semibold text-heading-small lg:text-heading text-black"
-          >
-            Frequently Asked Questions
-          </div>
-          <div
-            class="mt-4 lg:mt-6 mx-auto max-w-[1030px]"
-            data-accordion-container-faq
-          >
-            <div class="accordion-block">
-              <div class="single-accordion active">
-                <button class="accordion-trigger">
-                  Who is this course designed for?
-
-                  <span class="accordion-marker">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M6 9L12 15L18 9"
-                        stroke="#0F1D30"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </button>
-
-                <div class="accordion-answer">
-                  <div class="answer-wrapper">
-                    <p>
-                      SaaS works by hosting software applications on remote
-                      servers and delivering them to users over the internet.
-                      Users can access and use the software through web browsers
-                      or dedicated applications, eliminating the need for local
-                      installations.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="single-accordion">
-                <button class="accordion-trigger">
-                  Do I need prior knowledge of finance to enroll in this course?
-                  <span class="accordion-marker">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M6 9L12 15L18 9"
-                        stroke="#0F1D30"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </button>
-
-                <div class="accordion-answer">
-                  <div class="answer-wrapper">
-                    <p>
-                      SaaS works by hosting software applications on remote
-                      servers and delivering them to users over the internet.
-                      Users can access and use the software through web browsers
-                      or dedicated applications, eliminating the need for local
-                      installations.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="single-accordion">
-                <button class="accordion-trigger">
-                  What topics will be covered in this course?
-                  <span class="accordion-marker">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M6 9L12 15L18 9"
-                        stroke="#0F1D30"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </button>
-
-                <div class="accordion-answer">
-                  <div class="answer-wrapper">
-                    <p>
-                      SaaS works by hosting software applications on remote
-                      servers and delivering them to users over the internet.
-                      Users can access and use the software through web browsers
-                      or dedicated applications, eliminating the need for local
-                      installations.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="single-accordion">
-                <button class="accordion-trigger">
-                  Who is this course designed for?
-                  <span class="accordion-marker">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M6 9L12 15L18 9"
-                        stroke="#0F1D30"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </button>
-
-                <div class="accordion-answer">
-                  <div class="answer-wrapper">
-                    <p>
-                      SaaS works by hosting software applications on remote
-                      servers and delivering them to users over the internet.
-                      Users can access and use the software through web browsers
-                      or dedicated applications, eliminating the need for local
-                      installations.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="single-accordion">
-                <button class="accordion-trigger">
-                  How will the course be taught?
-                  <span class="accordion-marker">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M6 9L12 15L18 9"
-                        stroke="#0F1D30"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </span>
-                </button>
-
-                <div class="accordion-answer">
-                  <div class="answer-wrapper">
-                    <p>
-                      SaaS works by hosting software applications on remote
-                      servers and delivering them to users over the internet.
-                      Users can access and use the software through web browsers
-                      or dedicated applications, eliminating the need for local
-                      installations.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    
       <footer>
         <div
           class="popup-ad fixed top-[90px] md:top-auto md:bottom-2 opacity-0 translate-y-[-140%] md:translate-y-[110%] left-2 right-2 md:right-auto md:w-[314px] transition-all duration-300 z-[999]"
@@ -3038,10 +654,78 @@
         </div>
         <section
           id="contact"
-          class="pt-[40px] md:pt-[73px] pb-[80px] md:pb-[58px] bg-white scrollspy-section"
+          class="pt-[40px] md:pt-[73px] pb-[80px] md:pb-[58px] rounded-[120px] border-t border-roseGoldDark scrollspy-section"
         >
-          <div class="container text-left md:text-center">
-            <h2
+          <div class="container">
+            <div class="grid md:grid-cols-3 gap-4">
+              <div>
+                <img src="img/wild-sugar-logo.svg" class="w-[240px] mx-auto" alt="">
+                
+              </div>
+              <div class="flex flex-col gap-1 mt-[60px]">
+                <p class="text-white mb-0">Chef Farida Taher</p>
+                <p class="text-white mb-0">Copyright ©2024. All Rights Reserved.</p>
+                <p class="text-white mb-0">Contact Us - </p>
+                <ul class="flex items-center gap-3">
+                  
+                  <li class="mb-0">
+                    <a href="#!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                      >
+                        <path
+                          d="M29.3346 16.0006C29.3346 8.64057 23.3613 2.66724 16.0013 2.66724C8.6413 2.66724 2.66797 8.64057 2.66797 16.0006C2.66797 22.4539 7.25464 27.8272 13.3346 29.0672V20.0006H10.668V16.0006H13.3346V12.6672C13.3346 10.0939 15.428 8.00057 18.0013 8.00057H21.3346V12.0006H18.668C17.9346 12.0006 17.3346 12.6006 17.3346 13.3339V16.0006H21.3346V20.0006H17.3346V29.2672C24.068 28.6006 29.3346 22.9206 29.3346 16.0006Z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mb-0">
+                    <a href="#!">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="33"
+                        height="32"
+                        viewBox="0 0 33 32"
+                        fill="none"
+                      >
+                        <path
+                          d="M17.7009 2.6679C18.6738 2.66417 19.6468 2.67395 20.6195 2.69723L20.8782 2.70657C21.1769 2.71723 21.4715 2.73057 21.8275 2.74657C23.2462 2.81323 24.2142 3.03723 25.0635 3.36657C25.9435 3.70523 26.6849 4.1639 27.4262 4.90523C28.104 5.57138 28.6286 6.37716 28.9635 7.26657C29.2929 8.1159 29.5169 9.08523 29.5835 10.5039C29.5995 10.8586 29.6129 11.1546 29.6235 11.4532L29.6315 11.7119C29.6552 12.6842 29.6654 13.6567 29.6622 14.6292L29.6635 15.6239V17.3706C29.6668 18.3436 29.6566 19.3165 29.6329 20.2892L29.6249 20.5479C29.6142 20.8466 29.6009 21.1412 29.5849 21.4972C29.5182 22.9159 29.2915 23.8839 28.9635 24.7332C28.6297 25.6236 28.105 26.43 27.4262 27.0959C26.7595 27.7737 25.9533 28.2982 25.0635 28.6332C24.2142 28.9626 23.2462 29.1866 21.8275 29.2532C21.4715 29.2692 21.1769 29.2826 20.8782 29.2932L20.6195 29.3012C19.6468 29.3249 18.6738 29.3352 17.7009 29.3319L16.7062 29.3332H14.9609C13.9879 29.3365 13.0149 29.3263 12.0422 29.3026L11.7835 29.2946C11.467 29.2831 11.1506 29.2698 10.8342 29.2546C9.41553 29.1879 8.44753 28.9612 7.59686 28.6332C6.70711 28.299 5.90118 27.7743 5.23553 27.0959C4.55692 26.4296 4.03183 25.6233 3.69686 24.7332C3.36753 23.8839 3.14353 22.9159 3.07686 21.4972C3.06201 21.1809 3.04868 20.8644 3.03686 20.5479L3.0302 20.2892C3.00561 19.3165 2.9945 18.3436 2.99686 17.3706V14.6292C2.99314 13.6567 3.00292 12.6842 3.0262 11.7119L3.03553 11.4532C3.0462 11.1546 3.05953 10.8586 3.07553 10.5039C3.1422 9.0839 3.3662 8.11723 3.69553 7.26657C4.03069 6.37673 4.55682 5.57116 5.23686 4.90657C5.90206 4.22757 6.70748 3.702 7.59686 3.36657C8.44753 3.03723 9.4142 2.81323 10.8342 2.74657L11.7835 2.70657L12.0422 2.6999C13.0144 2.67533 13.987 2.66422 14.9595 2.66657L17.7009 2.6679ZM16.3302 9.33457C15.4469 9.32207 14.5699 9.48527 13.7502 9.81466C12.9305 10.144 12.1844 10.6331 11.5553 11.2533C10.9263 11.8735 10.4267 12.6126 10.0858 13.4276C9.74483 14.2425 9.56925 15.1172 9.56925 16.0006C9.56925 16.884 9.74483 17.7586 10.0858 18.5736C10.4267 19.3885 10.9263 20.1276 11.5553 20.7478C12.1844 21.3681 12.9305 21.8571 13.7502 22.1865C14.5699 22.5159 15.4469 22.6791 16.3302 22.6666C18.0983 22.6666 19.794 21.9642 21.0442 20.7139C22.2945 19.4637 22.9969 17.768 22.9969 15.9999C22.9969 14.2318 22.2945 12.5361 21.0442 11.2859C19.794 10.0356 18.0983 9.33457 16.3302 9.33457ZM16.3302 12.0012C16.8615 11.9914 17.3895 12.0876 17.8833 12.2842C18.377 12.4807 18.8266 12.7737 19.2059 13.146C19.5852 13.5182 19.8864 13.9623 20.0921 14.4524C20.2978 14.9424 20.4038 15.4685 20.4039 15.9999C20.404 16.5313 20.2982 17.0574 20.0926 17.5475C19.8871 18.0376 19.586 18.4818 19.2069 18.8542C18.8277 19.2266 18.3782 19.5197 17.8845 19.7164C17.3908 19.9131 16.8629 20.0095 16.3315 19.9999C15.2707 19.9999 14.2532 19.5785 13.5031 18.8283C12.753 18.0782 12.3315 17.0608 12.3315 15.9999C12.3315 14.939 12.753 13.9216 13.5031 13.1715C14.2532 12.4213 15.2707 11.9999 16.3315 11.9999L16.3302 12.0012ZM23.3302 7.33457C22.9001 7.35178 22.4933 7.53477 22.195 7.8452C21.8968 8.15562 21.7302 8.56941 21.7302 8.9999C21.7302 9.43039 21.8968 9.84418 22.195 10.1546C22.4933 10.465 22.9001 10.648 23.3302 10.6652C23.7722 10.6652 24.1961 10.4896 24.5087 10.1771C24.8213 9.86452 24.9969 9.44059 24.9969 8.99857C24.9969 8.55654 24.8213 8.13262 24.5087 7.82006C24.1961 7.50749 23.7722 7.3319 23.3302 7.3319V7.33457Z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+              <div class="flex flex-col gap-3 mt-[60px]">
+                <a
+                href="#!"
+                class="leading-none text-white font-medium font-josefin"
+              >
+                About
+              </a>
+              <a
+                href="#!"
+                class="leading-none text-white font-medium font-josefin"
+              >
+                E-Book
+              </a>
+              <a
+                href="#!"
+                class="leading-none text-white font-medium font-josefin"
+              >
+                Courses
+              </a>
+              </div>
+              
+            </div>
+            <!-- <h2
               class="text-[#191B1A] text-24 leading-[1.3] font-semibold mb-1 md:mb-2"
             >
               RIGI for creators
@@ -3054,19 +738,19 @@
             >
               <a
                 href="#!"
-                class="mb-3 md:mb-0 mr-[45px] text-16 leading-none text-[#191B1A] font-medium"
+                class="leading-none text-white font-medium font-josefin"
               >
                 Terms of service
               </a>
               <a
                 href="#!"
-                class="mb-3 md:mb-0 mr-[45px] text-16 leading-none text-[#191B1A] font-medium"
+                class="leading-none text-white font-medium font-josefin"
               >
                 Privacy Policy
               </a>
               <a
                 href="#!"
-                class="mb-0 md:mb-0 text-16 leading-none text-[#191B1A] font-medium"
+                class="mb-0 md:mb-0 leading-none text-white font-medium"
               >
                 Code of conduct
               </a>
@@ -3189,11 +873,107 @@
                   </svg>
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </section>
       </footer>
     </main>
+    <script>
+      // Initialize Lenis
+      const lenis = new Lenis({
+        autoRaf: true,
+      });
+
+      // Listen for the scroll event and log the event data
+      lenis.on('scroll', (e) => {
+        console.log(e);
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".course-slider .swiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".course-slider .swiper-button-next",
+          prevEl: ".course-slider .swiper-button-prev",
+        },
+        pagination: {
+          el: ".course-slider .swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          0:{slidesPerView: 1},
+          320: { slidesPerView: 1.2 },
+          475:{slidesPerView: 1.8},
+          640: {slidesPerView: 2.3},
+          768: { slidesPerView: 2.3 },
+        }
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".share-btn").forEach((button) => {
+        button.addEventListener("click", async () => {
+          const url = button.getAttribute("data-url") || window.location.href;
+      
+          // Try using Web Share API if available
+          if (navigator.share) {
+            try {
+              await navigator.share({
+                title: document.title,
+                text: "Check out this course!",
+                url: url
+              });
+              return;
+            } catch (err) {
+              console.warn("Web Share failed, falling back to clipboard:", err);
+            }
+          }
+      
+          // Fallback: copy to clipboard (desktop)
+          if (navigator.clipboard && window.isSecureContext) {
+            try {
+              await navigator.clipboard.writeText(url);
+              showToast(button);
+              return;
+            } catch (err) {
+              console.warn("Clipboard write failed:", err);
+            }
+          }
+      
+          // Final fallback for very old browsers
+          const textArea = document.createElement("textarea");
+          textArea.value = url;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+      
+          try {
+            document.execCommand("copy");
+            showToast(button);
+          } catch (err) {
+            alert("Could not copy link. Please copy manually.");
+          }
+      
+          document.body.removeChild(textArea);
+        });
+      
+        // Show toast (next sibling element with class `share-toast`)
+        function showToast(button) {
+          const toast = button.nextElementSibling;
+          if (toast && toast.classList.contains("share-toast")) {
+            toast.style.display = "inline";
+            setTimeout(() => {
+              toast.style.display = "none";
+            }, 2000);
+          }
+        }
+      });
+      </script>
+      
+      
     <script src="js/jquery.min.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/app.js"></script>

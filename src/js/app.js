@@ -337,7 +337,7 @@ if (testimonialSlider) {
       //   // loop: true,
       // },
       768: {
-        items: 2,
+        items: 3,
         startIndex: 0,
         nav: false,
         mouseDrag: true,
