@@ -3600,6 +3600,10 @@ table th:last-child {
     width: auto;
   }
 
+  .md\:w-\[260px\] {
+    width: 260px;
+  }
+
   .md\:min-w-\[200px\] {
     min-width: 200px;
   }
