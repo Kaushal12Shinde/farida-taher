@@ -1237,3 +1237,45 @@ table th:last-child {
   padding: 16px 24px;
   font-family: "Josefin Sans", sans-serif;
 }
+
+.tick-list li {
+  padding-left: 35px;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tick-list li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px
+}
+
+@media(max-width: 1024px) {
+  .tick-list li {
+    padding-left: 30px;
+    align-items: flex-start;
+  }
+
+  .tick-list li:before {
+    top: 3px;
+    width: 18px;
+    height: 18px
+  }
+
+  .tick-list li a {
+    max-width: 192px
+  }
+
+  .tick-list li span {
+    font-size: 12px;
+    opacity: .8
+  }
+}

@@ -140,9 +140,9 @@
                       />
                     </a>
                   </div>
-                  <div>
+                  <!-- <div>
                     <a class="nav-link text-white" href="#about">About</a>
-                  </div>
+                  </div> -->
                   <div>
                     <a class="nav-link text-white" href="e-book.html">E-Book</a>
                   </div>
@@ -581,7 +581,6 @@
       </section>
 
       <footer>
-        
         <section
           id="contact"
           class="pt-[40px] md:pt-[73px] pb-[80px] md:pb-[58px] rounded-[60px] md:rounded-[120px] border-t border-roseGoldDark scrollspy-section"
@@ -599,7 +598,7 @@
                 <ul class="flex items-center gap-3">
                   
                   <li class="mb-0">
-                    <a href="#!">
+                    <a href="https://www.facebook.com/WildSugarMysore/">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="32"
@@ -615,7 +614,7 @@
                     </a>
                   </li>
                   <li class="mb-0">
-                    <a href="#!">
+                    <a href="https://www.instagram.com/wildsugar_mysore/">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="33"
@@ -635,19 +634,19 @@
               </div>
               <div class="flex flex-row md:flex-col justify-center md:justify-start items-center md:items-start gap-4 md:gap-3 md:mt-[60px]">
                 <a
-                href="#!"
+                href="#about"
                 class="leading-none text-white font-medium font-josefin"
               >
                 About
               </a>
               <a
-                href="#!"
+                href="./e-book.html"
                 class="leading-none text-white font-medium font-josefin"
               >
                 E-Book
               </a>
               <a
-                href="#!"
+                href="./courses.html"
                 class="leading-none text-white font-medium font-josefin"
               >
                 Courses
@@ -691,67 +690,7 @@
         },
       });
     </script>
-    <script>
-      document.querySelectorAll(".share-btn").forEach((button) => {
-        button.addEventListener("click", async () => {
-          const url = button.getAttribute("data-url") || window.location.href;
-
-          // Try using Web Share API if available
-          if (navigator.share) {
-            try {
-              await navigator.share({
-                title: document.title,
-                text: "Check out this course!",
-                url: url,
-              });
-              return;
-            } catch (err) {
-              console.warn("Web Share failed, falling back to clipboard:", err);
-            }
-          }
-
-          // Fallback: copy to clipboard (desktop)
-          if (navigator.clipboard && window.isSecureContext) {
-            try {
-              await navigator.clipboard.writeText(url);
-              showToast(button);
-              return;
-            } catch (err) {
-              console.warn("Clipboard write failed:", err);
-            }
-          }
-
-          // Final fallback for very old browsers
-          const textArea = document.createElement("textarea");
-          textArea.value = url;
-          textArea.style.position = "fixed";
-          textArea.style.left = "-9999px";
-          document.body.appendChild(textArea);
-          textArea.focus();
-          textArea.select();
-
-          try {
-            document.execCommand("copy");
-            showToast(button);
-          } catch (err) {
-            alert("Could not copy link. Please copy manually.");
-          }
-
-          document.body.removeChild(textArea);
-        });
-
-        // Show toast (next sibling element with class `share-toast`)
-        function showToast(button) {
-          const toast = button.nextElementSibling;
-          if (toast && toast.classList.contains("share-toast")) {
-            toast.style.display = "inline";
-            setTimeout(() => {
-              toast.style.display = "none";
-            }, 2000);
-          }
-        }
-      });
-    </script>
+   
 
     <script src="js/jquery.min.js"></script>
     <script src="js/tiny-slider.js"></script>
