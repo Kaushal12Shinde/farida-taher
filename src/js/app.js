@@ -348,3 +348,51 @@ if (testimonialSlider) {
     },
   });
 }
+
+const gallerySlider2 = document.querySelector(".gallery-slider-2");
+
+if (gallerySlider2) {
+  var gallerySlider2Ref = tns({
+    container: gallerySlider2,
+    gutter: 20,
+    items: 1,
+    mouseDrag: false,
+    nav: true,
+    navPosition: "bottom",
+    controls: false,
+    speed: 600,
+    loop: true,
+
+    responsive: {
+      0: {
+        items: 1,
+        autoplay: true,
+        // loop: true,
+      },
+      568: {
+        items: 2.5,
+        startIndex: 0,
+        nav: false,
+        mouseDrag: true,
+        autoplay: true,
+        loop: true,
+      },
+      820: {
+        items: 3.2,
+        startIndex: 0,
+        nav: false,
+        mouseDrag: true,
+        autoplay: true,
+        loop: true,
+      },
+      1100: {
+        items: 4,
+        startIndex: 0,
+        nav: false,
+        mouseDrag: true,
+        autoplay: true,
+        loop: true,
+      }
+    },
+  });
+}
