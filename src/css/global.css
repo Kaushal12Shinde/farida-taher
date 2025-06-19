@@ -324,7 +324,7 @@
   border-radius: 30px;
 }
 .nav-main .nav-wrapper a:not(.button):hover {
-  color: rgba(36, 90, 236, 0.8);
+  color: #f89899;
 }
 @media (max-width: 1024px) {
   .nav-main .hamburger {
@@ -337,7 +337,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #091135;
+    background-color: #000000;
     z-index: 99;
     flex-direction: column;
     text-align: left;
