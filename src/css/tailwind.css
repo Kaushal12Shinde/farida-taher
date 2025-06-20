@@ -945,6 +945,10 @@ video {
   margin-bottom: 12px;
 }
 
+.mb-\[30px\] {
+  margin-bottom: 30px;
+}
+
 .block {
   display: block;
 }
@@ -1298,6 +1302,14 @@ video {
 
 .max-w-\[300px\] {
   max-width: 300px;
+}
+
+.max-w-\[990\] {
+  max-width: 990;
+}
+
+.max-w-\[890\] {
+  max-width: 890;
 }
 
 .flex-1 {
@@ -4293,6 +4305,14 @@ table th:last-child {
 
   .md\:text-\[2px\] {
     font-size: 2px;
+  }
+
+  .md\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .md\:text-\[px\] {
+    color: px;
   }
 }
 
