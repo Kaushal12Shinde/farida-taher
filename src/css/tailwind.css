@@ -2240,6 +2240,11 @@ video {
   color: rgb(255 255 255 / 0.9);
 }
 
+.text-roseGoldDark {
+  --tw-text-opacity: 1;
+  color: rgb(242 106 106 / var(--tw-text-opacity, 1));
+}
+
 .line-through {
   text-decoration-line: line-through;
 }
