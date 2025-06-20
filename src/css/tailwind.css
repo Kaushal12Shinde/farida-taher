@@ -1256,6 +1256,10 @@ video {
   max-width: 900px;
 }
 
+.max-w-\[790px\] {
+  max-width: 790px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -3864,6 +3868,10 @@ table th:last-child {
 
   .md\:mt-6 {
     margin-top: 64px;
+  }
+
+  .md\:mb-\[12px\] {
+    margin-bottom: 12px;
   }
 
   .md\:block {
