@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Melting Moments</title>
+  <meta name="description" content="Master the art of layered cakes that involve precision in baking each layer evenly, crafting complementary fillings and frostings, and decorating with finesse to create a visually stunning masterpiece." />
+  <meta property="og:title" content="Melting Moments" />
+  <meta property="og:description" content="Master the art of layered cakes that involve precision in baking each layer evenly, crafting complementary fillings and frostings, and decorating with finesse to create a visually stunning masterpiece." /> 
+  <meta property="og:url" content="">
+  <meta property="og:image"
+    content="img/metling-moments/cake-1.webp">
+  <link rel="shortcut icon" href="img/wild-sugar-favion.svg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+  <link rel="stylesheet" href="css/tailwind.css" />
+</head>
+<style>
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    background: radial-gradient(circle,
+        rgba(0, 0, 0, 0.117) 0%,
+        rgba(0, 0, 0, 0.5) 100%);
+    pointer-events: none;
+    /* background-color: #000000; */
+    opacity: 1.2;
+  }
+
+  a,
+  p {
+    font-family: "Josefin Sans", sans-serif !important;
+  }
+
+  .ring {
+    --border-bottom-width: 1px;
+    --border-color: #f26a6ab8;
+    /* rgba(255, 255, 255, 0.303) */
+    --border-left-width: 1px;
+    --border-right-width: 1px;
+    --border-style: solid;
+    --border-top-width: 1px;
+    -webkit-mask: linear-gradient(180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.16) 82.8441722972973%) add;
+    /* border-radius: 48px; */
+    flex: none;
+    inset: 0;
+    mask: linear-gradient(180deg,
+        #000000 0%,
+        rgba(0, 0, 0, 0.16) 82.8441722972973%) add;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .ring::after {
+    content: "";
+    border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0);
+    border-color: var(--border-color, none);
+    border-style: var(--border-style, none);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  .course-slider {
+    position: relative;
+    width: 100%;
+  }
+
+  .course-slider .swiper {
+    padding-bottom: 40px;
+  }
+
+  .course-slider .swiper-slide {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 300px;
+    /* 👈 Important to prevent infinite vertical scrolling */
+  }
+
+  .course-slider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .course-slider .swiper-button-prev,
+  .course-slider .swiper-button-next {
+    width: 36px;
+    height: 36px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .course-slider .swiper-button-prev::after,
+  .course-slider .swiper-button-next::after {
+    font-size: 16px;
+  }
+
+  .course-slider .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #999;
+    opacity: 0.5;
+  }
+
+  .course-slider .swiper-pagination-bullet-active {
+    background: #f26a8d;
+    opacity: 1;
+  }
+
+  .share-toast {
+    font-size: 14px;
+    color: #f26a8d;
+    margin-left: 8px;
+    animation: fadeInOut 2s ease-in-out;
+  }
+
+  @keyframes fadeInOut {
+
+    0%,
+    100% {
+      opacity: 0;
+    }
+
+    10%,
+    90% {
+      opacity: 1;
+    }
+  }
+
+  .backdrop-card {
+    backdrop-filter: blur(5vmax);
+    -webkit-backdrop-filter: blur(8vmax);
+    z-index: 5;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .backdrop-card--backdrop {
+    z-index: 0;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #f8989a4b;
+    filter: blur(140px);
+  }
+</style>
+
+<body class="bg-black">
+  <header>
+    <nav class="bg-black py-1 duration-300 fixed top-0 left-0 right-0 z-50 border-b border-b-white/50">
+      <div class="container">
+        <div class="flex items-center justify-between -mx-2">
+          <div class="px-2 order-0 lg:order-none">
+            <a href="/" class="">
+              <img class="w-[50px] md:w-[60px]" src="img/wild-sugar-logo.svg" alt="" />
+            </a>
+          </div>
+          <div class="px-2 order-1 lg:order-none">
+            <div class="nav-main">
+              <button class="hamburger">
+                <span class=""></span>
+                <span class=""></span>
+                <span class=""></span>
+              </button>
+              <div class="nav-wrapper flex gap-4 md:gap-5 items-center md:justify-end">
+                <div class="md:hidden inline-block">
+                  <a href="/" class="">
+                    <img class="ml-[-16px] w-[140px] md:w-[60px]" src="img/wild-sugar-logo.svg" alt="" />
+                  </a>
+                </div>
+                <div>
+                  <a class="nav-link text-white" href="#about">About</a>
+                </div>
+                <div>
+                  <a class="nav-link text-white" href="e-book.html">E-Book</a>
+                </div>
+                <div>
+                  <a class="nav-link text-white" href="courses.html">Courses</a>
+                </div>
+                <div>
+                  <a class="nav-link text-white" href="#contact">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pt-[40px] md:pt-[120px] pb-[80px] md:pb-[140px]">
+      <div class="container">
+        <div class="flex items-center flex-col lg:flex-row gap-[28px] lg:gap-[40px] mt-[90px]">
+          <div class="lg:w-[50%] flex-1">
+            <h1 class="text-[26px] md:text-[34px] font-josefin text-roseGold font-bold mb-1 text-center">Exotic Layered Cookies</h1>
+            <p class="text-white mb-1 text-18 md:text-[22px] text-center">By Chef Farida Taher</p>
+            <p
+              class="text-white text-[22px] md:text-[26px] tracking-[0.5px] font-bold text-center my-2 py-1 px-2 border border-roseGoldDark w-fit mx-auto rounded-lg">
+              ₹1,899/-</p>
+            <!-- <p class="text-white text-[22px] md:text-[26px] tracking-[0.5px] font-bold text-center my-2 py-1 px-2 border border-roseGoldDark w-fit mx-auto rounded-lg"> ₹1,899/- <span class="line-through text-18 md:text-[22px]"> ₹2,899/-</span></p> -->
+            <div class="flex items-center gap-[12px] mt-3 w-fit mx-auto">
+              <img src="img/play.svg" class="w-[30px] mt-[-1px]" alt="" />
+              <p class="text-white text-20 md:text-[22px] font-semibold mb-0 text-center">Professionally Recorded
+                Lessons
+              </p>
+            </div>
+            <a href="https://com.rpy.club/cp/Eu1Z4WnUaa">
+              <button
+                class="wild-theme-btn text-18 md:text-[20px] mt-3 rounded-lg text-white flex items-center justify-center w-full lg:w-[260px] mx-auto">
+                Buy Course
+                <img src="img/arrow-right.svg" class="inline-block ml-1 w-[24px]" alt="" />
+              </button>
+            </a>
+            <div class="flex items-center justify-center gap-[10px] mt-3">
+              <div class="stacked-avatars">
+                <div>
+                  <img class="w-[32px] h-[32px]" src="img/stack-5.webp" alt="" />
+                </div>
+                <div>
+                  <img class="w-[32px] h-[32px]" src="img/stack-4.webp" alt="" />
+                </div>
+                <div>
+                  <img class="w-[32px] h-[32px]" src="img/stack-3.webp" alt="" />
+                </div>
+                <div>
+                  <img class="w-[32px] h-[32px]" src="img/stack-2.webp" alt="" />
+                </div>
+                <div>
+                  <img class="w-[32px] h-[32px]" src="img/stack-1.webp" alt="" />
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex items-center gap-[2px]">
+                  <img class="w-[14px] h-[14px]" src="img/star-rate.svg" alt="">
+                  <img class="w-[14px] h-[14px]" src="img/star-rate.svg" alt="">
+                  <img class="w-[14px] h-[14px]" src="img/star-rate.svg" alt="">
+                  <img class="w-[14px] h-[14px]" src="img/star-rate.svg" alt="">
+                  <img class="w-[14px] h-[14px]" src="img/star-rate.svg" alt="">
+                </div>
+                <p class="text-white/80 mb-0 text-16 font-semibold">6,500+ Satisfied learners</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-[95%] lg:w-[50%] mx-auto">
+            <div class="course-slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;"
+                      src="img/metling-moments/cake-1.webp" alt="Course 1" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;"
+                      src="img/metling-moments/cake-2.webp" alt="Course 2" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;"
+                      src="img/metling-moments/cake-3.webp" alt="Course 3" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;"
+                      src="img/metling-moments/cake-4.webp" alt="Course 4" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;"
+                      src="img/metling-moments/cake-5.webp" alt="Course 5" />
+                  </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative flex items-center justify-center">
+      <div class="container">
+        <div
+          class="backdrop-card mx-auto flex items-center justify-center rounded-sm md:rounded-[48px] gap-[30px] md:gap-[64px] p-[28px] md:p-[48px] relative h-min">
+          <div class="ring rounded-2xl md:rounded-[48px]"></div>
+          <div class="backdrop-card--backdrop"></div>
+          <div class="relative">
+            <h1
+              class="text-[22px] md:text-[24px] font-josefin text-roseGold font-bold text-center leading-[1.6]">
+              The ultimate comfort food is here to entice your taste buds to a whole new level! <br>
+              This workshop is designed to help you level up your cookie game while getting your basics right. Each recipe has been crafted with delicious base recipes which are levelled up with exotic inserts, fillings and frosting. <br>
+              These international cookies have a whiff of premium ingredients in every bite. Are you ready to transport yourself into exquisite flavours....! <br>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative overflow-hidden pb-6 md:pb-[60px]">
+      <div class="container relative">
+        <div class="gallery-slider-2 py-2">
+          <div class="item">
+            <img src="img/metling-moments/cake-1.webp"
+              style="aspect-ratio: 3/4; object-fit: cover; object-position: center;"
+              class="rounded-lg aspect-square mx-auto" alt="">
+          </div>
+          <div class="item">
+            <img src="img/metling-moments/cake-2.webp"
+              style="aspect-ratio: 3/4; object-fit: cover; object-position: center;"
+              class="rounded-lg aspect-square mx-auto" alt="">
+          </div>
+          <div class="item">
+            <img src="img/metling-moments/cake-3.webp"
+              style="aspect-ratio: 3/4; object-fit: cover; object-position: center;"
+              class="rounded-lg aspect-square mx-auto" alt="">
+          </div>
+          <div class="item">
+            <img src="img/metling-moments/cake-4.webp"
+              style="aspect-ratio: 3/4; object-fit: cover; object-position: center;"
+              class="rounded-lg aspect-square mx-auto" alt="">
+          </div>
+
+          <div class="item">
+            <img src="img/metling-moments/cake-5.webp"
+              style="aspect-ratio: 3/4; object-fit: cover; object-position: center;"
+              class="rounded-lg aspect-square mx-auto" alt="">
+          </div>
+          
+        </div>
+      </div>
+
+      </div>
+    </section>
+    <section class="py-[60px] md:py-[80px]">
+      <div class="container">
+        <h1 class="text-roseGold text-[26px] md:text-[40px] font-josefin font-extrabold text-center mb-[40px]">
+            What will you learn
+        </h1>
+        <div
+          class="backdrop-card mx-auto  rounded-sm md:rounded-[48px] flex-col md:flex-row gap-[30px] md:gap-[64px] p-[28px] md:p-[48px] relative h-min">
+          <div class="ring rounded-2xl md:rounded-[48px]"></div>
+          <div class="backdrop-card--backdrop"></div>
+          <div class="grid md:grid-cols-2 gap-3">
+            <div>
+              <div class="flex items-start gap-[10px] mb-2">
+                <img src="img/stars-c-fill.svg" class="shrink-0 w-[26px] mt-[5px]" alt="">
+                <p class="mb-0 text-[22px] md:text-[24px] leading-[1.4] text-white">Swiss style hazelnut lemon filled cookies with white chocolate hazelnut glaze</p>
+              </div>
+
+              <div class="flex items-start gap-[10px] mb-2">
+                <img src="img/stars-c-fill.svg" class="shrink-0 w-[26px] mt-[5px]" alt="">
+                <p class="mb-0 text-[22px] md:text-[24px] leading-[1.4] text-white">Italian Cannoli reinvented with chocolate ricotta filling and roasted pistachio</p>
+              </div>
+
+              <div class="flex items-start gap-[10px] mb-2">
+                <img src="img/stars-c-fill.svg" class="shrink-0 w-[26px] mt-[5px]" alt="">
+                <p class="mb-0 text-[22px] md:text-[24px] leading-[1.4] text-white">Intense chocolate Brookies with orange coconut truffles</p>
+              </div>
+
+            </div>
+            <div>
+              <div class="flex items-start gap-[10px] mb-2">
+                <img src="img/stars-c-fill.svg" class="shrink-0 w-[26px] mt-[5px]" alt="">
+                <p class="mb-0 text-[22px] md:text-[24px] leading-[1.4] text-white">Tuscan Amaretti cookies with raspberry ganache and rose marzipan</p>
+              </div>
+
+              <div class="flex items-start gap-[10px] mb-2">
+                <img src="img/stars-c-fill.svg" class="shrink-0 w-[26px] mt-[5px]" alt="">
+                <p class="mb-0 text-[22px] md:text-[24px] leading-[1.4] text-white">Chocolate chunk New York style cookies with almond praline inserts</p>
+              </div>
+
+              <div class="flex items-start gap-[10px] mb-2">
+                <img src="img/stars-c-fill.svg" class="shrink-0 w-[26px] mt-[5px]" alt="">
+                <p class="mb-0 text-[22px] md:text-[24px] leading-[1.4] text-white">Herbed cheese and spice crackers with cheese fondue</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-white text-20 md:text-[22px] text-center mt-4">Complex recipes are broken down into easy techniques with a step-by-step video tutorial that make layering effortless. Each recipe is versatile and can be used in various cakes and desserts or on its own!</p>
+        <p class="text-white text-20 md:text-[22px] text-center">
+            Shelf life and storage instructions will be given. <br>
+            Lifetime access to the course <br>
+            After class support is available.
+        </p>
+      </div>
+      <a href="https://com.rpy.club/cp/Eu1Z4WnUaa">
+        <button
+          class="wild-theme-btn text-18 md:text-[20px] mt-6 rounded-lg text-white flex items-center justify-center w-full lg:w-[260px] mx-auto">
+          Buy Course
+          <img src="img/arrow-right.svg" class="inline-block ml-1 w-[24px]" alt="" />
+        </button>
+      </a>
+    </section>
+
+
+    <section class="py-[60px] md:pb-[80px]" id="about">
+      <div class="container">
+        <div>
+          <h1 class="text-[36px] md:text-[46px] text-center text-white font-josefin">Meet the <span
+              class="text-roseGold">Chef</span></h1>
+          <div class="w-[160px] md:w-[260px] h-[2px] rounded-full bg-white mx-auto mt-3 md:mt-4"></div>
+        </div>
+        <div class="flex flex-col lg:flex-row items-center mt-[50px] gap-[40px] md:gap-[74px]">
+          <div class="md:w-[80%] lg:w-[40%]">
+            <img src="img/about.webp" class="rounded-xl" alt="">
+          </div>
+          <div class="lg:w-[60%]">
+            <p class="text-white text-18 md:text-20 font-medium">I’m Farida — founder of Wild Sugar Gourmet Baking,
+              based in the heart of Mysore.</p>
+            <p class="text-white text-18 md:text-20 font-medium">A former GMAT/GRE trainer at The Princeton Review, my
+              journey to pastry wasn’t predictable — but it was always meant to be. What began as crafting clean protein
+              bars during my time as a fitness trainer slowly transformed into an obsession with flavour, form, and
+              finesse. The overwhelming response to those early creations sparked something in me, and I never looked
+              back.
+              I trained professionally at Whitecaps International School of Pastry, completing the Paris Patisserie
+              Program, and further honed my craft with advanced courses at Lavonne Academy and KICA Russian academy for
+              pastry arts. These experiences didn’t just refine my skills — they brought my creative vision to life.
+              Wild Sugar launched on September 3, 2020 was born out of a desire to offer Mysuru something bold,
+              beautiful, and truly gourmet. </p>
+          </div>
+        </div>
+        <div class="lg:px-2 mt-1 lg:mt-5">
+          <p class="text-white text-18 md:text-20 font-medium">
+            Today, I run a thriving baking studio, host immersive online workshops, and have had the privilege of
+            consulting for reputed patisseries across India. In 2025, I was honoured to be chosen as a Finalist for Best
+            Pastry Chef (India) at the IICMA International Awards, a milestone that reflects my deep commitment to this
+            craft.
+            But more than technique, awards, or trends — what drives me is flavour. I believe baking should be joyful,
+            playful, and deeply satisfying. My teaching style reflects that: simple, structured recipes that empower
+            bakers to think creatively, understand the why behind every method, and break free from the rigidity of
+            “perfect” baking.
+          </p>
+          <p class="text-white text-18 md:text-20 font-medium">Whether you're a home baker, a pastry student, or a
+            professional looking to discover joy in your process — you’ll find that every Wild Sugar class is equal
+            parts science, soul, and storytelling.</p>
+          <p class="text-white text-18 md:text-20 font-medium mb-0">Here’s to curious hearts, messy counters, bold
+            flavours, and the joy of creating something beautiful, together.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section class="py-[60px] md:py-[80px]">
+      <div class="container">
+        <h1 class="text-roseGold font-bold text-[28px] md:text-[36px] text-center font-josefin">Key Highlights</h1>
+        <div
+          class="max-w-[1160px] mx-auto flex items-center justify-center bg-[#020202] rounded-sm md:rounded-[48px] flex-col md:flex-row gap-[30px] md:gap-[64px] p-[20px] md:p-[48px] relative h-min mt-5">
+          <div class="ring rounded-2xl md:rounded-[48px]"></div>
+          <ul class="pl-[20px]" style="list-style-type: disc;">
+            <li class="text-white font-josefin mb-1 text-20 md:text-[22px]">
+              All recipes are ORIGINAL and developed after innumerable trials.
+            </li>
+            <li class="text-white font-josefin mb-1 text-20 md:text-[22px]">
+              All elements will be demonstrated in individual videos along with the assembly.
+              <ul class="pl-[20px] mt-1" style="list-style-type:circle;">
+                <li class="text-white font-josefin mb-1 text-18 md:text-[20px]">Easily available and accessible
+                  ingredients.</li>
+                <li class="text-white font-josefin mb-1 text-18 md:text-[20px]">Extremely versatile recipes which can be
+                  used creatively to make tons of different variations.</li>
+                <li class="text-white font-josefin mb-1 text-18 md:text-[20px]">No special equipment needed.</li>
+              </ul>
+            </li>
+            <li class="text-white font-josefin mb-1 text-20 md:text-[22px]">Highly sellable with different flavour
+              options.</li>
+            <li class="text-white font-josefin mb-1 text-20 md:text-[22px]">
+              Learn to make delicious products with easy techniques and unique flavour profiles that no one else offers.
+              <ul class="pl-[20px] mt-1" style="list-style-type:circle;">
+                <li class="text-white font-josefin mb-1 text-18 md:text-[20px]">Beginner friendly and travel friendly
+                </li>
+                <li class="text-white font-josefin mb-1 text-18 md:text-[20px]">After class support</li>
+              </ul>
+            </li>
+            <li class="text-white font-josefin mb-1 text-20 md:text-[22px]">
+              Lifetime access to the recordings
+              <ul class="pl-[20px] mt-1" style="list-style-type:circle;">
+                <li class="text-white font-josefin mb-1 text-18 md:text-[20px]">Professionally recorded session with
+                  brief and detailed videos on each element.</li>
+                <li class="text-white font-josefin mb-1 text-18 md:text-[20px]">Videos will be crisp and clear with a
+                  step by step guide on the process without the hassle of watching for long hours.</li>
+              </ul>
+            </li>
+            <li class="text-white font-josefin mb-1 text-20 md:text-[22px]">Recipe cards can be downloaded from the
+              course once the workshop is launched.</li>
+          </ul>
+        </div>
+        <a href="https://com.rpy.club/cp/Eu1Z4WnUaa">
+          <button
+            class="wild-theme-btn text-18 md:text-[20px] mt-6 rounded-lg text-white flex items-center justify-center w-full lg:w-[260px] mx-auto">
+            Buy Course
+            <img src="img/arrow-right.svg" class="inline-block ml-1 w-[24px]" alt="" />
+          </button>
+        </a>
+      </div>
+    </section>
+    <footer>
+      <section
+        id="contact"
+        class="pt-[40px] md:pt-[73px] pb-[80px] md:pb-[58px] rounded-[60px] md:rounded-[120px] border-t border-roseGoldDark scrollspy-section"
+      >
+        <div class="container">
+          <div class="grid md:grid-cols-3 gap-4">
+            <div>
+              <img src="img/wild-sugar-logo.svg" class="w-[200px] md:w-[240px] mx-auto" alt="">
+              
+            </div>
+            <div class="flex flex-col items-center md:items-start gap-1 md:mt-[60px]">
+              <p class="text-white mb-0">Chef Farida Taher</p>
+              <p class="text-white mb-0">Copyright ©2024. All Rights Reserved.</p>
+              <p class="text-white mb-0">Contact Us - </p>
+              <ul class="flex items-center gap-3">
+                
+                <li class="mb-0">
+                  <a href="https://www.facebook.com/WildSugarMysore/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                    >
+                      <path
+                        d="M29.3346 16.0006C29.3346 8.64057 23.3613 2.66724 16.0013 2.66724C8.6413 2.66724 2.66797 8.64057 2.66797 16.0006C2.66797 22.4539 7.25464 27.8272 13.3346 29.0672V20.0006H10.668V16.0006H13.3346V12.6672C13.3346 10.0939 15.428 8.00057 18.0013 8.00057H21.3346V12.0006H18.668C17.9346 12.0006 17.3346 12.6006 17.3346 13.3339V16.0006H21.3346V20.0006H17.3346V29.2672C24.068 28.6006 29.3346 22.9206 29.3346 16.0006Z"
+                        fill="#fff"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li class="mb-0">
+                  <a href="https://www.instagram.com/wildsugar_mysore/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="33"
+                      height="32"
+                      viewBox="0 0 33 32"
+                      fill="none"
+                    >
+                      <path
+                        d="M17.7009 2.6679C18.6738 2.66417 19.6468 2.67395 20.6195 2.69723L20.8782 2.70657C21.1769 2.71723 21.4715 2.73057 21.8275 2.74657C23.2462 2.81323 24.2142 3.03723 25.0635 3.36657C25.9435 3.70523 26.6849 4.1639 27.4262 4.90523C28.104 5.57138 28.6286 6.37716 28.9635 7.26657C29.2929 8.1159 29.5169 9.08523 29.5835 10.5039C29.5995 10.8586 29.6129 11.1546 29.6235 11.4532L29.6315 11.7119C29.6552 12.6842 29.6654 13.6567 29.6622 14.6292L29.6635 15.6239V17.3706C29.6668 18.3436 29.6566 19.3165 29.6329 20.2892L29.6249 20.5479C29.6142 20.8466 29.6009 21.1412 29.5849 21.4972C29.5182 22.9159 29.2915 23.8839 28.9635 24.7332C28.6297 25.6236 28.105 26.43 27.4262 27.0959C26.7595 27.7737 25.9533 28.2982 25.0635 28.6332C24.2142 28.9626 23.2462 29.1866 21.8275 29.2532C21.4715 29.2692 21.1769 29.2826 20.8782 29.2932L20.6195 29.3012C19.6468 29.3249 18.6738 29.3352 17.7009 29.3319L16.7062 29.3332H14.9609C13.9879 29.3365 13.0149 29.3263 12.0422 29.3026L11.7835 29.2946C11.467 29.2831 11.1506 29.2698 10.8342 29.2546C9.41553 29.1879 8.44753 28.9612 7.59686 28.6332C6.70711 28.299 5.90118 27.7743 5.23553 27.0959C4.55692 26.4296 4.03183 25.6233 3.69686 24.7332C3.36753 23.8839 3.14353 22.9159 3.07686 21.4972C3.06201 21.1809 3.04868 20.8644 3.03686 20.5479L3.0302 20.2892C3.00561 19.3165 2.9945 18.3436 2.99686 17.3706V14.6292C2.99314 13.6567 3.00292 12.6842 3.0262 11.7119L3.03553 11.4532C3.0462 11.1546 3.05953 10.8586 3.07553 10.5039C3.1422 9.0839 3.3662 8.11723 3.69553 7.26657C4.03069 6.37673 4.55682 5.57116 5.23686 4.90657C5.90206 4.22757 6.70748 3.702 7.59686 3.36657C8.44753 3.03723 9.4142 2.81323 10.8342 2.74657L11.7835 2.70657L12.0422 2.6999C13.0144 2.67533 13.987 2.66422 14.9595 2.66657L17.7009 2.6679ZM16.3302 9.33457C15.4469 9.32207 14.5699 9.48527 13.7502 9.81466C12.9305 10.144 12.1844 10.6331 11.5553 11.2533C10.9263 11.8735 10.4267 12.6126 10.0858 13.4276C9.74483 14.2425 9.56925 15.1172 9.56925 16.0006C9.56925 16.884 9.74483 17.7586 10.0858 18.5736C10.4267 19.3885 10.9263 20.1276 11.5553 20.7478C12.1844 21.3681 12.9305 21.8571 13.7502 22.1865C14.5699 22.5159 15.4469 22.6791 16.3302 22.6666C18.0983 22.6666 19.794 21.9642 21.0442 20.7139C22.2945 19.4637 22.9969 17.768 22.9969 15.9999C22.9969 14.2318 22.2945 12.5361 21.0442 11.2859C19.794 10.0356 18.0983 9.33457 16.3302 9.33457ZM16.3302 12.0012C16.8615 11.9914 17.3895 12.0876 17.8833 12.2842C18.377 12.4807 18.8266 12.7737 19.2059 13.146C19.5852 13.5182 19.8864 13.9623 20.0921 14.4524C20.2978 14.9424 20.4038 15.4685 20.4039 15.9999C20.404 16.5313 20.2982 17.0574 20.0926 17.5475C19.8871 18.0376 19.586 18.4818 19.2069 18.8542C18.8277 19.2266 18.3782 19.5197 17.8845 19.7164C17.3908 19.9131 16.8629 20.0095 16.3315 19.9999C15.2707 19.9999 14.2532 19.5785 13.5031 18.8283C12.753 18.0782 12.3315 17.0608 12.3315 15.9999C12.3315 14.939 12.753 13.9216 13.5031 13.1715C14.2532 12.4213 15.2707 11.9999 16.3315 11.9999L16.3302 12.0012ZM23.3302 7.33457C22.9001 7.35178 22.4933 7.53477 22.195 7.8452C21.8968 8.15562 21.7302 8.56941 21.7302 8.9999C21.7302 9.43039 21.8968 9.84418 22.195 10.1546C22.4933 10.465 22.9001 10.648 23.3302 10.6652C23.7722 10.6652 24.1961 10.4896 24.5087 10.1771C24.8213 9.86452 24.9969 9.44059 24.9969 8.99857C24.9969 8.55654 24.8213 8.13262 24.5087 7.82006C24.1961 7.50749 23.7722 7.3319 23.3302 7.3319V7.33457Z"
+                        fill="#fff"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="flex flex-row md:flex-col justify-center md:justify-start items-center md:items-start gap-4 md:gap-3 md:mt-[60px]">
+              <a
+              href="#about"
+              class="leading-none text-white font-medium font-josefin"
+            >
+              About
+            </a>
+            <a
+              href="./e-book.html"
+              class="leading-none text-white font-medium font-josefin"
+            >
+              E-Book
+            </a>
+            <a
+              href="./courses.html"
+              class="leading-none text-white font-medium font-josefin"
+            >
+              Courses
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </main>
+  <script>
+    // Initialize Lenis
+    const lenis = new Lenis({
+      autoRaf: true,
+    });
+
+    // Listen for the scroll event and log the event data
+    lenis.on('scroll', (e) => {
+      console.log(e);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    new Swiper(".course-slider .swiper", {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".course-slider .swiper-button-next",
+        prevEl: ".course-slider .swiper-button-prev",
+      },
+      pagination: {
+        el: ".course-slider .swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        320: { slidesPerView: 1.2 },
+        475: { slidesPerView: 1.8 },
+        640: { slidesPerView: 2.3 },
+        768: { slidesPerView: 2.3 },
+      }
+    });
+  </script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/headroom.min.js"></script>
+</body>
+
+</html>
