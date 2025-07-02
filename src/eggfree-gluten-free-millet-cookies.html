@@ -731,6 +731,34 @@
       </div>
     </section>
 
+    <section class="ppy-[60px] md:py-[80px]"
+      id="testimonials">
+      <div class="container">
+        <h1 class="text-[36px] md:text-[46px] text-center text-white font-josefin">
+          Testimonials
+        </h1>
+        <div class="t-slider mt-3 md:mt-[50px]">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/millet-cookies/testimonials/t-1.webp" alt="Testimonial 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/millet-cookies/testimonials/t-2.webp" alt="Testimonial 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/millet-cookies/testimonials/t-3.webp" alt="Testimonial 3" />
+              </div>
+            </div>
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="py-[60px] md:pb-[80px]" id="about">
       <div class="container">
         <div>
@@ -870,90 +898,7 @@
     });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script>
-    new Swiper(".course-slider .swiper", {
-      slidesPerView: 4,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: ".course-slider .swiper-button-next",
-        prevEl: ".course-slider .swiper-button-prev",
-      },
-      pagination: {
-        el: ".course-slider .swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        0: { slidesPerView: 1 },
-        320: { slidesPerView: 1.2 },
-        475: { slidesPerView: 1.8 },
-        640: { slidesPerView: 2.3 },
-        768: { slidesPerView: 2.3 },
-      }
-    });
-  </script>
-  <script>
-    document.querySelectorAll(".share-btn").forEach((button) => {
-      button.addEventListener("click", async () => {
-        const url = button.getAttribute("data-url") || window.location.href;
-
-        // Try using Web Share API if available
-        if (navigator.share) {
-          try {
-            await navigator.share({
-              title: document.title,
-              text: "Check out this course!",
-              url: url
-            });
-            return;
-          } catch (err) {
-            console.warn("Web Share failed, falling back to clipboard:", err);
-          }
-        }
-
-        // Fallback: copy to clipboard (desktop)
-        if (navigator.clipboard && window.isSecureContext) {
-          try {
-            await navigator.clipboard.writeText(url);
-            showToast(button);
-            return;
-          } catch (err) {
-            console.warn("Clipboard write failed:", err);
-          }
-        }
-
-        // Final fallback for very old browsers
-        const textArea = document.createElement("textarea");
-        textArea.value = url;
-        textArea.style.position = "fixed";
-        textArea.style.left = "-9999px";
-        document.body.appendChild(textArea);
-        textArea.focus();
-        textArea.select();
-
-        try {
-          document.execCommand("copy");
-          showToast(button);
-        } catch (err) {
-          alert("Could not copy link. Please copy manually.");
-        }
-
-        document.body.removeChild(textArea);
-      });
-
-      // Show toast (next sibling element with class `share-toast`)
-      function showToast(button) {
-        const toast = button.nextElementSibling;
-        if (toast && toast.classList.contains("share-toast")) {
-          toast.style.display = "inline";
-          setTimeout(() => {
-            toast.style.display = "none";
-          }, 2000);
-        }
-      }
-    });
-  </script>
-
-
+  <script src="js/swipe.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/tiny-slider.js"></script>
   <script src="js/app.js"></script>

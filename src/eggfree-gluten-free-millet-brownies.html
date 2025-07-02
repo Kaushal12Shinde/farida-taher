@@ -719,6 +719,47 @@
       </div>
     </section>
 
+    <section class="ppy-[60px] md:py-[80px]"
+      id="testimonials">
+      <div class="container">
+        <h1 class="text-[36px] md:text-[46px] text-center text-white font-josefin">
+          Testimonials
+        </h1>
+        <div class="t-slider mt-3 md:mt-[50px]">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="img/millet-brownies/testimonials/t-1.webp" alt="Testimonial 1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/millet-brownies/testimonials/t-2.webp" alt="Testimonial 2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/millet-brownies/testimonials/t-3.webp" alt="Testimonial 3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/millet-brownies/testimonials/t-4.webp" alt="Testimonial 4" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/millet-brownies/testimonials/t-5.webp" alt="Testimonial 5" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/millet-brownies/testimonials/t-6.webp" alt="Testimonial 6" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/millet-brownies/testimonials/t-7.webp" alt="Testimonial 7" />
+              </div>
+
+            </div>
+        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="py-[60px] md:pb-[80px]" id="about">
       <div class="container">
         <div>
@@ -832,28 +873,7 @@
     });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script>
-    new Swiper(".course-slider .swiper", {
-      slidesPerView: 4,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: ".course-slider .swiper-button-next",
-        prevEl: ".course-slider .swiper-button-prev",
-      },
-      pagination: {
-        el: ".course-slider .swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        0: { slidesPerView: 1 },
-        320: { slidesPerView: 1.2 },
-        475: { slidesPerView: 1.8 },
-        640: { slidesPerView: 2.3 },
-        768: { slidesPerView: 2.3 },
-      }
-    });
-  </script>
-
+  <script src="js/swipe.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/tiny-slider.js"></script>
   <script src="js/app.js"></script>

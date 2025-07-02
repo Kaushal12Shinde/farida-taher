@@ -1,4 +1,8 @@
+
+
 const mobile = window.innerWidth < 768;
+
+
 
 // navbar
 const headermain = document.querySelector(".header-main");
