@@ -48,6 +48,7 @@
   <link rel="stylesheet" href="css/tailwind.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <style>
   .overlay {
@@ -181,6 +182,14 @@
   .course-sec:nth-child(odd) {
     background-color: #0e0e0e;
   }
+
+  .t-slider .swiper-slide {
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 100% !important;
+  aspect-ratio: auto !important;
+}
+
 </style>
 
 <body class="bg-black">
@@ -705,175 +714,219 @@
     </section>
 
 
-    <section class="pb-[80px] md:pb-[100px] pt-[40px] md:pt-[80px] testimonial-section overflow-hidden"
+    <section class="pb-[80px] pt-[40px] md:pt-[80px] testimonial-section overflow-hidden"
       id="testimonials">
       <div class="container">
         <h1 class="text-[36px] md:text-[46px] text-center text-white font-josefin">
           Testimonials
         </h1>
         <div class="">
-          <div class="testimonial-slider mt-[40px] lg:mt-6">
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  Dnt have words mam to say thank u to u...I alwys look upto for inspiration...be it in baking profession or in changing profession according to ur passion
-                  U have really taught me what best u can do to make things work for u <br>
-                  Thank u mam <br>
-                  Luv n hugs to u ❤️<br>
-                </p>
-                <p class="text-white text-18"> - Divya Menon</p>
+          <div class="t-slider mt-[40px] lg:mt-6">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      Dnt have words mam to say thank u to u...I alwys look upto for inspiration...be it in baking profession or in changing profession according to ur passion
+                      U have really taught me what best u can do to make things work for u <br>
+                      Thank u mam <br>
+                      Luv n hugs to u ❤️<br>
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Divya Menon</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      Best mentor i have come across.
+                      I have done offline course from e renowned academy here in mumbai .But was waste of nearly waste of money.
+                      U teach n explain so well .No points or secret technic or ingredients hidden from students.
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Elsa</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      Luv u mam 🤍🤍...no matter hw big i grow wish that time comes soon)..bt I wll alwys be grateful to u for my transformation and helping me in making me standing out from other bakers in my society..
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Kavya Bhandari</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      So true...I alwys admire u and ur recipes..after I found u...l never went for any other for flavours and even suggest people to go for ur classes
+                      Ur juz too too awesme mam
+                      Luv u 🫶
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Anshika Tandon</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      Dear Farida. Quite delayed in wishing you . Heartiest congratulations for achieving such a great milestone.
+                      Much before the awards, you have already won many hearts by transforming lives through your teachings. 
+                      May God bless you with greater success. Congratulations again. ❤️❤️👏👏
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Ayra</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      Your way of online class is best. The details you share, the recipes you procured.. and the outcome of cakes turn out are best. We can trust blind fold. There are very few mentors for me with whome i tried the class.
+                      You are one of them. Hats off for your hard work. The great curated recipes.
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Priya Rathi</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      Your online class are no.1 for me.
+                      They are upto the mark. Just go to the recipe and its done. So I liked the way you make all your videos. Very informative still precise .
+                      Thn for your guidance and sharing your wonderful creations with us .
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Rhea</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      Farida, the best thing about your videos r they r precise, to the point with each element has a separate video .
+                      It becomes so easy to pick nd choose the sponge, and elements that can be permuted nd combined.
+                      No time pass
+                      in the videos,
+                      whatever queries anyone has, they ask either thru the watsapp group or directly.
+                      So easy to follow nd proceed making the cake.
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Anisha</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      Thank you ma'am for the foolproof recipe and the detailed explanation
+                      Nothing can go wrong with your recipes
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Maria</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      Enrolled
+                    Just letting you know I blindly enroll in every class you launch Your recipes are oh so amazing!
+                    And videos and explanations so clear
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Saanvi Deshpande</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      As always your recipe card is packed with all vital information and super precise
+                      I now lost count of workshop done with you.
+                      Thank you for such awesome detailed notes
+                      Videos yet up watch but am sure they are bang on
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Inaya</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      As always your recipe card is packed with all vital information and super precise
+                      I now lost count of workshop done with you.
+                      Thank you for such awesome detailed notes
+                      Videos yet up watch but am sure they are bang on
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Shridhar</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      Congratulations and you are the best and you recieve an award from each one of us for teaching us with honesty, no hidden secrets and you are a queen in flavouring cakes you have also helped growing our business with so many creative ideas
+                      You are our master chef 🥳🥳
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Ishita Iyer</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="p-2 md:p-4 rounded-[20px]">
+                    <img src="img/quotes.svg" class="!w-[30px] !h-[30px]" alt="" />
+                    <p class="text-roseGold text-16 md:text-18 mt-4">
+                      Hi Ma'am
+                      I have taken many online classes from you.
+                      I have purchased one tea cake class from others too .
+                      I m wholeheartedly telling you your classes are best very professional💯. After buying other classes I have decided not to buy any classes from others. Its my personal choice.I m teacher by profession I always wanted to learn from a proper teacher.I found the right teacher.
+                      Thank you ma'am 🫶🫶
+                    </p>
+                    <p class="text-white text-18 mb-0"> - Likhit</p>
+                  </div>
+                </div>
               </div>
+              <!-- <div class="swiper-button-prev hidden !md:flex"></div>
+              <div class="swiper-button-next hidden !md:flex"></div> -->
+              <div class="swiper-pagination"></div>
             </div>
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  Best mentor i have come across.
-                  I have done offline course from e renowned academy here in mumbai .But was waste of nearly waste of money.
-                  U teach n explain so well .No points or secret technic or ingredients hidden from students.
-                </p>
-                <p class="text-white text-18"> - Elsa</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  Luv u mam 🤍🤍...no matter hw big i grow wish that time comes soon)..bt I wll alwys be grateful to u for my transformation and helping me in making me standing out from other bakers in my society..
-                </p>
-                <p class="text-white text-18"> - Kavya Bhandari</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  So true...I alwys admire u and ur recipes..after I found u...l never went for any other for flavours and even suggest people to go for ur classes
-                  Ur juz too too awesme mam
-                  Luv u 🫶
-                </p>
-                <p class="text-white text-18"> - Anshika Tandon</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  Dear Farida. Quite delayed in wishing you . Heartiest congratulations for achieving such a great milestone.
-                  Much before the awards, you have already won many hearts by transforming lives through your teachings. 
-                  May God bless you with greater success. Congratulations again. ❤️❤️👏👏
-                </p>
-                <p class="text-white text-18"> - Ayra</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  Your way of online class is best. The details you share, the recipes you procured.. and the outcome of cakes turn out are best. We can trust blind fold. There are very few mentors for me with whome i tried the class.
-                  You are one of them. Hats off for your hard work. The great curated recipes.
-                </p>
-                <p class="text-white text-18"> - Priya Rathi</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  Your online class are no.1 for me.
-                  They are upto the mark. Just go to the recipe and its done. So I liked the way you make all your videos. Very informative still precise .
-                  Thn for your guidance and sharing your wonderful creations with us .
-                </p>
-                <p class="text-white text-18"> - Rhea</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  Farida, the best thing about your videos r they r precise, to the point with each element has a separate video .
-                  It becomes so easy to pick nd choose the sponge, and elements that can be permuted nd combined.
-                  No time pass
-                  in the videos,
-                  whatever queries anyone has, they ask either thru the watsapp group or directly.
-                  So easy to follow nd proceed making the cake.
-                </p>
-                <p class="text-white text-18"> - Anisha</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  Thank you ma'am for the foolproof recipe and the detailed explanation
-                  Nothing can go wrong with your recipes
-                </p>
-                <p class="text-white text-18"> - Maria</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  Enrolled
-                Just letting you know I blindly enroll in every class you launch Your recipes are oh so amazing!
-                And videos and explanations so clear
-                </p>
-                <p class="text-white text-18"> - Saanvi Deshpande</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  As always your recipe card is packed with all vital information and super precise
-                  I now lost count of workshop done with you.
-                  Thank you for such awesome detailed notes
-                  Videos yet up watch but am sure they are bang on
-                </p>
-                <p class="text-white text-18"> - Inaya</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  As always your recipe card is packed with all vital information and super precise
-                  I now lost count of workshop done with you.
-                  Thank you for such awesome detailed notes
-                  Videos yet up watch but am sure they are bang on
-                </p>
-                <p class="text-white text-18"> - Shridhar</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  Congratulations and you are the best and you recieve an award from each one of us for teaching us with honesty, no hidden secrets and you are a queen in flavouring cakes you have also helped growing our business with so many creative ideas
-                  You are our master chef 🥳🥳
-                </p>
-                <p class="text-white text-18"> - Ishita Iyer</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="p-3 md:p-4 rounded-[20px] h-full">
-                <img src="img/quotes.svg" class="w-[30px]" alt="" />
-                <p class="text-roseGold text-18 mt-4">
-                  Hi Ma'am
-                  I have taken many online classes from you.
-                  I have purchased one tea cake class from others too .
-                  I m wholeheartedly telling you your classes are best very professional💯. After buying other classes I have decided not to buy any classes from others. Its my personal choice.I m teacher by profession I always wanted to learn from a proper teacher.I found the right teacher.
-                  Thank you ma'am 🫶🫶
-                </p>
-                <p class="text-white text-18"> - Likhit</p>
-              </div>
-            </div>
-            
-            
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="pt-[60px] pb-[80px] section-dark-gradient relative">
+      <div class="loader flex items-center justify-center">
+        <span class="loading"></span>
+      </div>
+      <div class="container">
+        <h1 class="text-[26px] md:text-[36px] text-center text-white font-josefin font-bold">
+          Drop Us Your <span class="text-roseGold">Query</span>
+        </h1>
+        <form id="form" method="post" class="max-w-[580px] mx-auto mt-[40px] md:mt-[60px]">
+          <div class="grid md:grid-cols-2 gap-2">
+            <div class="flex flex-col gap-1">
+              <label for="username" class="pl-[4px] text-white font-semibold text-18">Name</label>
+              <input type="text" name="username" id="name" class="w-full border border-roseGoldDark bg-black text-white font-semibold rounded-lg px-1 py-[10px]" required>
+            </div>
+            <div class="flex flex-col gap-1">
+              <label for="number" class="pl-[4px] text-white font-semibold text-18">Phone Number</label>
+              <input type="number" name="number" id="number" class="w-full border border-roseGoldDark bg-black text-white font-semibold rounded-lg px-1 py-[10px]">
+            </div>
+          </div>
+          <div class="flex flex-col gap-1 mt-3">
+            <label for="email" class="pl-[4px] text-white font-semibold text-18">Email</label>
+            <input type="email" name="email" id="email" class="w-full border border-roseGoldDark bg-black text-white font-semibold rounded-lg px-1 py-[10px]" required>
+          </div>
+          <div class="flex flex-col gap-1 mt-3">
+            <label for="query" class="pl-[4px] text-white font-semibold text-18">Query</label>
+            <textarea name="query" id="query" class="w-full border border-roseGoldDark bg-black text-white font-semibold rounded-lg px-1 py-[10px]"></textarea>
+          </div>
+          <div class="flex justify-center mt-4 md:mt-5">
+            <button href="#!"
+              id="submit-button"
+              class="button rounded-lg py-[12px] px-[20px] bg-roseGoldDark min-w-[260px] font-josefin font-bold inline-block text-white text-18 md:text-20 leading-[1.5]"
+              type="submit">
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -931,6 +984,7 @@
       </section>
     </footer>
   </main>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script>
     // Initialize Lenis
     const lenis = new Lenis({
@@ -963,6 +1017,31 @@
         768: { slidesPerView: 2.3 },
       }
     });
+
+    new Swiper(".t-slider .swiper", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".t-slider .swiper-button-next",
+      prevEl: ".t-slider .swiper-button-prev",
+    },
+    pagination: {
+      el: ".t-slider .swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
   </script>
   <script>
     document.querySelectorAll(".share-btn").forEach((button) => {
@@ -1025,6 +1104,69 @@
       }
     });
   </script>
+<script>
+  document.getElementById("form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const loader = document.querySelector('.loader');
+    const submitButton = document.getElementById("submit-button");
+
+    submitButton.disabled = true;
+    loader.style.display = 'flex';
+
+    const formData = new FormData(this);
+
+    fetch("https://script.google.com/macros/s/AKfycbxml05VQiuGkU-jT6aaEE5OG3pFXTho71J_NrOwhUaUcpZBVj5YspHEbOHndxndgdLW/exec", {
+      method: "POST",
+      body: formData, // ✅ Don't manually set Content-Type
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.status === "success") {
+          Toastify({
+            text: data.message,
+            duration: 3000,
+            gravity: "bottom",
+            position: "right",
+            avatar: './img/tick.svg',
+            style: {
+              background: "linear-gradient(to right, #333333, #000000)",
+              borderRadius: "10px",
+              display: "flex",
+              alignItems: "center",
+              gap: "6px",
+            },
+          }).showToast();
+
+          document.getElementById("form").reset();
+        } else {
+          throw new Error(data.message || "Submission failed.");
+        }
+      })
+      .catch(error => {
+        console.error("Error!", error);
+        Toastify({
+          text: error.message || "An error occurred. Please try again.",
+          duration: 3000,
+          gravity: "top",
+          position: "right",
+          avatar: "./img/cross.svg",
+          style: {
+            background: "linear-gradient(to right, #333333, #000000)",
+            borderRadius: "10px",
+            display: "flex",
+            alignItems: "center",
+            gap: "6px",
+          },
+        }).showToast();
+      })
+      .finally(() => {
+        submitButton.disabled = false;
+        loader.style.display = 'none';
+      });
+  });
+</script>
+
 
 
   <script src="js/jquery.min.js"></script>
