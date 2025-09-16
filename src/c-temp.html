@@ -119,19 +119,43 @@
     display: block;
   }
 
+  @media (min-width: 768px) {
+    .course-slider .swiper-button-prev,
+    .course-slider .swiper-button-next {
+      width: 36px;
+      height: 36px;
+      background: white;
+      color: black;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .course-slider .swiper-button-prev::after,
+    .course-slider .swiper-button-next::after {
+      font-size: 16px;
+    }
+
+    .course-slider .swiper-button-prev .swiper-navigation-icon,
+    .course-slider .swiper-button-next .swiper-navigation-icon {
+      height: 90%;
+      width: 90%; 
+    }
+  }
+
   .course-slider .swiper-button-prev,
   .course-slider .swiper-button-next {
-    width: 36px;
-    height: 36px;
+    width: 26px;
+    height: 26px;
     background: white;
     color: black;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  .course-slider .swiper-button-prev::after,
-  .course-slider .swiper-button-next::after {
-    font-size: 16px;
+  .course-slider .swiper-button-prev .swiper-navigation-icon,
+  .course-slider .swiper-button-next .swiper-navigation-icon {
+    height: 50%;
+    width: 50%; 
   }
 
   .course-slider .swiper-pagination-bullet {
@@ -229,6 +253,7 @@
       <div class="container">
         <div
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 md:gap-3 max-w-[1060px] mx-auto my-[60px]">
+          
           <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
             <div class="course-slider">
               <div class="swiper">
@@ -446,23 +471,47 @@
                 <div class="swiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;"
-                        src="img/matilda-brigadeiro-cake/img-1.webp" alt="Matilda Brigadeiro Cake 1 - By Farida Taher" />
-                    </div>
-                    
-                    <div class="swiper-slide">
-                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;"
-                        src="img/matilda-brigadeiro-cake/img-4.webp" alt="Matilda Brigadeiro Cake 2 - By Farida Taher" />
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/savoury-nack/img-1.webp" alt="Savoury Snack Smarter 1 - By Fairda Taher" />
                     </div>
                     <div class="swiper-slide">
-                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;"
-                        src="img/matilda-brigadeiro-cake/img-6.webp" alt="Matilda Brigadeiro Cake 3 - By Farida Taher" />
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/savoury-nack/img-2.webp" alt="Savoury Snack Smarter 2 - By Fairda Taher" />
                     </div>
                     <div class="swiper-slide">
-                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;"
-                        src="img/matilda-brigadeiro-cake/img-7.webp" alt="Matilda Brigadeiro Cake 4 - By Farida Taher" />
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/savoury-nack/img-3.webp" alt="Savoury Snack Smarter 3 - By Fairda Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/savoury-nack/img-4.webp" alt="Savoury Snack Smarter 4 - By Fairda Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/savoury-nack/img-5.webp" alt="Savoury Snack Smarter 5 - By Fairda Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/savoury-nack/img-6.webp" alt="Savoury Snack Smarter 6 - By Fairda Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/savoury-nack/img-7.webp" alt="Savoury Snack Smarter 7 - By Fairda Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/savoury-nack/img-8.webp" alt="Savoury Snack Smarter 8 - By Fairda Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/savoury-nack/img-9.webp" alt="Savoury Snack Smarter 9 - By Fairda Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/savoury-nack/img-10.webp" alt="Savoury Snack Smarter 10 - By Fairda Taher" />
                     </div>
                   </div>
+              
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-button-next"></div>
                   <div class="swiper-pagination"></div>
@@ -575,7 +624,7 @@
             </div>
           </div>
 
-           <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
             <div class="course-slider">
                 <div class="swiper">
                   <div class="swiper-wrapper">
@@ -645,6 +694,1523 @@
               </div>
             </div>
           </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+            <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy" src="img/rustic-millet/bean-cake.webp" alt="Millet Teacakes & Layered Cakes 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy" src="img/rustic-millet/annanas-cake.webp" alt="Millet Teacakes & Layered Cakes 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy" src="img/rustic-millet/cafe-noir-cake.webp" alt="Millet Teacakes & Layered Cakes 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy" src="img/rustic-millet/go-bannaza-cake.webp" alt="Millet Teacakes & Layered Cakes 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy" src="img/rustic-millet/itallian-nutty.webp" alt="Millet Teacakes & Layered Cakes 5 - By Farida Taher" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                   Rustic Gluten Free Millet Teacakes & Layered Cakes Masterclass
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹2,850/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.9
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/rustic-millet-cakes">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/rustic-millet-cakes">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+            <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/luxury-pastries/image4.webp" alt="Luxury Pastries 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/luxury-pastries/image6.webp" alt="Luxury Pastries 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/luxury-pastries/image8.webp" alt="Luxury Pastries 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/luxury-pastries/image3.webp" alt="Luxury Pastries 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/luxury-pastries/image1.webp" alt="Luxury Pastries 5 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/luxury-pastries/image9.webp" alt="Luxury Pastries 6 - By Farida Taher" />
+                    </div>
+                  </div>
+              
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                   Luxury Pastries Masterclass
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹3,199/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/luxury-pastries-masterclass">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/luxury-pastries-masterclass">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+            <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/moshi-mochi/image-1.webp" alt="Moshi Mochi 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/moshi-mochi/image-2.webp" alt="Moshi Mochi 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/moshi-mochi/image-3.webp" alt="Moshi Mochi 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/moshi-mochi/image-4.webp" alt="Moshi Mochi 4 - By Farida Taher" />
+                    </div>
+                  </div>
+              
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                   Moshi Mochi Masterclass
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹2,799/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.9
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/the-art-of-mochi-making">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/the-art-of-mochi-making">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+            <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/layered-puddings/carousel-1.webp" alt="International Layered Puddings 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/layered-puddings/carousel-2.webp" alt="International Layered Puddings 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/layered-puddings/carousel-3.webp" alt="International Layered Puddings 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/layered-puddings/carousel-4.webp" alt="International Layered Puddings 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/layered-puddings/carousel-5.webp" alt="International Layered Puddings 5 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/layered-puddings/carousel-6.webp" alt="International Layered Puddings 6 - By Farida Taher" />
+                    </div>
+                  </div>
+              
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                    International Layered Puddings
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹2,750/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/international-layered-pudding">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/international-layered-pudding">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+            <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/artisanal-treats/healthy-img-1.webp" alt="Healthy Artisanal treats 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/artisanal-treats/healthy-img-2.webp" alt="Healthy Artisanal treats 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/artisanal-treats/healthy-img-3.webp" alt="Healthy Artisanal treats 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/artisanal-treats/healthy-img-4.webp" alt="Healthy Artisanal treats 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/artisanal-treats/healthy-img-5.webp" alt="Healthy Artisanal treats 5 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/artisanal-treats/healthy-img-6.webp" alt="Healthy Artisanal treats 6 - By Farida Taher" />
+                    </div>
+                  </div>
+              
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                    Healthy Artisanal treats
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹2,750/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.9
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/healthy-artisanal-treats">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/healthy-artisanal-treats">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+            <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cakes/drone.webp" alt="Theobroma Flavourful Cakes 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cakes/firenice.webp" alt="Theobroma Flavourful Cakes 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cakes/mother-of-dragons.webp" alt="Theobroma Flavourful Cakes 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cakes/three-eyed-raven.webp" alt="Theobroma Flavourful Cakes 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cakes/valar-morghulis.webp" alt="Theobroma Flavourful Cakes 5 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cakes/slice-1.webp" alt="Theobroma Flavourful Cakes 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cakes/slice-2.webp" alt="Theobroma Flavourful Cakes 5 - By Farida Taher" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                    Theobroma Flavourful Cakes
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹3,699/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/theobroma-flavourful-cakes">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/theobroma-flavourful-cakes">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+            <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/nextlevel-brownies/gallery-2.webp" alt="Next level Brownies 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: top;" loading="lazy"
+                        src="img/nextlevel-brownies/gallery-3.webp" alt="Next level Brownies 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: top;" loading="lazy"
+                        src="img/nextlevel-brownies/gallery-4.webp" alt="Next level Brownies 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/nextlevel-brownies/gallery-1.webp" alt="Next level Brownies 5 - By Farida Taher" />
+                    </div>
+                  </div>
+              
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                    Next level Brownies Masterclass
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹1,899/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.9
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/nextlevel-brownies">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/nextlevel-brownies">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+            <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                            src="img/fantastic-fillings/img-1.webp" alt="Fantastic Fillings and Frostings 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                            src="img/fantastic-fillings/img-2.webp" alt="Fantastic Fillings and Frostings 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                            src="img/fantastic-fillings/img-3.webp" alt="Fantastic Fillings and Frostings 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                            src="img/fantastic-fillings/img-4.webp" alt="Fantastic Fillings and Frostings 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                            src="img/fantastic-fillings/img-7.webp" alt="Fantastic Fillings and Frostings 5 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                            src="img/fantastic-fillings/img-8.webp" alt="Fantastic Fillings and Frostings 6 - By Farida Taher" />
+                    </div>
+                  </div>
+              
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                   Fantastic Fillings and Frostings
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹2,499/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/fantastic-fillings-and-frostings">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/fantastic-fillings-and-frostings">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+            <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/metling-moments/cake-1.webp" alt="Melting Moments 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/metling-moments/cake-2.webp" alt="Melting Moments 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/metling-moments/cake-3.webp" alt="Melting Moments 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/metling-moments/cake-4.webp" alt="Melting Moments 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/metling-moments/cake-5.webp" alt="Melting Moments 5 - By Farida Taher" />
+                    </div>
+                  </div>
+              
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                   Melting Moments
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹1,999/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.9
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/melting-moments">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/melting-moments">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+            <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/exotic-layered/slider-c1-img6.webp" alt="Exotic Layered Cookies 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/exotic-layered/slider-c1-img5.webp" alt="Exotic Layered Cookies 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/exotic-layered/slider-c1-img7.webp" alt="Exotic Layered Cookies 5 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/exotic-layered/slider-c1-img4.webp" alt="Exotic Layered Cookies 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/exotic-layered/slider-c1-img2.webp" alt="Exotic Layered Cookies 4 - By Farida Taher" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                   Exotic Layered Cookies
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹1,899/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/exotic-layered-cookies">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/exotic-layered-cookies">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+           <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/thebroma-cacoa/slider-c2-img1.webp" alt="Theobroma Cacoa 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/thebroma-cacoa/slice-1.webp" alt="Theobroma Cacoa 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/thebroma-cacoa/slice-2.webp" alt="Theobroma Cacoa 5 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/thebroma-cacoa/slice-3.webp" alt="Theobroma Cacoa 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/thebroma-cacoa/slice-4.webp" alt="Theobroma Cacoa 5 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/thebroma-cacoa/slider-c2-img2.webp" alt="Theobroma Cacoa 6 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/thebroma-cacoa/slider-c2-img3.webp" alt="Theobroma Cacoa 7 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/thebroma-cacoa/slider-c2-img4.webp" alt="Theobroma Cacoa 8 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/thebroma-cacoa/slider-c2-img5.webp" alt="Theobroma Cacoa 9 - By Farida Taher" />
+                    </div>
+                    
+                  </div>
+              
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                  Theobroma Cacoa
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹3,299/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.9
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/theobroma-cacoa">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/theobroma-cacoa">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+           <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cacoa-2/image-1.webp" alt="Theobroma Cacoa - 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cacoa-2/image-2.webp" alt="Theobroma Cacoa - 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cacoa-2/slice-1.webp" alt="Theobroma Cacoa - 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cacoa-2/slice-2.webp" alt="Theobroma Cacoa - 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cacoa-2/slice-3.webp" alt="Theobroma Cacoa - 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cacoa-2/slice-4.webp" alt="Theobroma Cacoa - 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cacoa-2/slice-5.webp" alt="Theobroma Cacoa - 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cacoa-2/image-3.webp" alt="Theobroma Cacoa - 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobromo-cacoa-2/image-4.webp" alt="Theobroma Cacoa - 2 - By Farida Taher" />
+                    </div>
+                    
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                  Theobroma Cacoa - 2
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹3,799/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/theobroma-cacoa-2">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/theobroma-cacoa-2">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+           <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobroma-vanille/t-6.webp" alt="Theobroma Vanille 1 - By Fairda Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobroma-vanille/t-1.webp" alt="Theobroma Vanille 2 - By Fairda Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobroma-vanille/t-2.webp" alt="Theobroma Vanille 3 - By Fairda Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobroma-vanille/t-3.webp" alt="Theobroma Vanille 4 - By Fairda Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/theobroma-vanille/t-4.webp" alt="Theobroma Vanille 5 - By Fairda Taher" />
+                    </div>
+                    
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                  Theobroma Vanille
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹3,299/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.9
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/theobroma-vanille">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/theobroma-vanille">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+           <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/bakesale/slider-c3-img1.webp" alt="Bakesale Edit 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/bakesale/slider-c3-img2.webp" alt="Bakesale Edit 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/bakesale/slider-c3-img3.webp" alt="Bakesale Edit 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/bakesale/slider-c3-img4.webp" alt="Bakesale Edit 4 - By Farida Taher" />
+                    </div>
+                  </div>  
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                    Bakesale Edit
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹2,799/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/bakesale">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/bakesale">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+           <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/cafe-style/c-1.webp" alt="Cafè style Gateaux 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/cafe-style/c-2.webp" alt="Cafè style Gateaux 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/cafe-style/c-3.jpeg" alt="Cafè style Gateaux 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/cafe-style/c-5.webp" alt="Cafè style Gateaux 4 - By Farida Taher" />
+                    </div>
+                    
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                    Cafè style Gateaux
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹1,799/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.9
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/cafe-style-gateaux">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/cafe-style-gateaux">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+           <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                            src="img/mad-crumble/mad-crumble-1.webp" alt="Mad Crumble Tubs 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                            src="img/mad-crumble/mad-crumble-2.webp" alt="Mad Crumble Tubs 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                            src="img/mad-crumble/mad-crumble-3.webp" alt="Mad Crumble Tubs 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                            src="img/mad-crumble/mad-crumble-4.webp" alt="Mad Crumble Tubs 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                            src="img/mad-crumble/mad-crumble-5.webp" alt="Mad Crumble Tubs 5 - By Farida Taher" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                   Mad Crumble Tubs Masterclass
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹2,799/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/mad-crumble-tubs">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/mad-crumble-tubs">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+           <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/8-layered-choco-orange-cake/slice-1.webp" alt="8-Layered Hazelnut Choco-orange cake 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/8-layered-choco-orange-cake/slice-2.webp" alt="8-Layered Hazelnut Choco-orange cake 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/8-layered-choco-orange-cake/slice-3.webp" alt="8-Layered Hazelnut Choco-orange cake 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/8-layered-choco-orange-cake/slice-4.webp" alt="8-Layered Hazelnut Choco-orange cake 4 - By Farida Taher" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                   8-Layered Hazelnut Choco-orange cake
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹1,999/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.9
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/8-layered-hazelnut-chocolate-orange-cake">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/8-layered-hazelnut-chocolate-orange-cake">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+           <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/ferrero-rocher-russian-honey-cake/slice-1.webp" alt="Ferrero Rocher Russian honey cake 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/ferrero-rocher-russian-honey-cake/slice-2.webp" alt="Ferrero Rocher Russian honey cake 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/ferrero-rocher-russian-honey-cake/slice-3.webp" alt="Ferrero Rocher Russian honey cake 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/ferrero-rocher-russian-honey-cake/slice-4.webp" alt="Ferrero Rocher Russian honey cake 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/ferrero-rocher-russian-honey-cake/slice-5.webp" alt="Ferrero Rocher Russian honey cake 5 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/ferrero-rocher-russian-honey-cake/slice-6.webp" alt="Ferrero Rocher Russian honey cake 6 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/ferrero-rocher-russian-honey-cake/slice-7.webp" alt="Ferrero Rocher Russian honey cake 7 - By Farida Taher" />
+                    </div>
+                  </div>  
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                   Ferrero Rocher Russian honey cake
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹1,899/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/ferrero-rocher-russian-honey-cake">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/ferrero-rocher-russian-honey-cake">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+           <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/entremet-on-a-stick/slice-1.webp" alt="ENTREMET on a stick 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/entremet-on-a-stick/slice-2.webp" alt="ENTREMET on a stick 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/entremet-on-a-stick/slice-3.webp" alt="ENTREMET on a stick 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/entremet-on-a-stick/slice-4.webp" alt="ENTREMET on a stick 4 - By Farida Taher" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                  ENTREMET on a stick!
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹1,499/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.9
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/entremet-on-a-stick">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/entremet-on-a-stick">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+           <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: bottom;" loading="lazy"
+                        src="img/almond-apricot-russian-honey-cake/slice-1.webp" alt="Apricot Almond Russian Honey Cake 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/almond-apricot-russian-honey-cake/slice-2.webp" alt="Apricot Almond Russian Honey Cake 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/almond-apricot-russian-honey-cake/slice-3.webp" alt="Apricot Almond Russian Honey Cake 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/almond-apricot-russian-honey-cake/slice-4.webp" alt="Apricot Almond Russian Honey Cake 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/almond-apricot-russian-honey-cake/slice-5.webp" alt="Apricot Almond Russian Honey Cake 5 - By Farida Taher" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                  Apricot Almond Russian Honey Cake
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹1,599/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/apricot-almond-russian-honey-cake">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/apricot-almond-russian-honey-cake">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+           <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/dessert-rose/slice-1.webp" alt="Dessert Rose layered cake 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/dessert-rose/slice-2.webp" alt="Dessert Rose layered cake 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/dessert-rose/slice-3.webp" alt="Dessert Rose layered cake 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/dessert-rose/slice-4.webp" alt="Dessert Rose layered cake 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/dessert-rose/slice-5.webp" alt="Dessert Rose layered cake 5 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/dessert-rose/slice-6.webp" alt="Dessert Rose layered cake 6 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/dessert-rose/slice-7.webp" alt="Dessert Rose layered cake 7 - By Farida Taher" />
+                    </div>
+                  </div>  
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                  Dessert Rose layered cake
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹1,699/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.9
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/dessert-rose-layered-cake">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/dessert-rose-layered-cake">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
+           <div class="course-slider">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/brazilian-choco-caramel-russian-honey-cake/slice-1.webp" alt="Brazilian Choco Caramel Russian Honey cake 1 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/brazilian-choco-caramel-russian-honey-cake/slice-2.webp" alt="Brazilian Choco Caramel Russian Honey cake 2 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/brazilian-choco-caramel-russian-honey-cake/slice-3.webp" alt="Brazilian Choco Caramel Russian Honey cake 3 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/brazilian-choco-caramel-russian-honey-cake/slice-4.webp" alt="Brazilian Choco Caramel Russian Honey cake 4 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/brazilian-choco-caramel-russian-honey-cake/slice-5.webp" alt="Brazilian Choco Caramel Russian Honey cake 5 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/brazilian-choco-caramel-russian-honey-cake/slice-6.webp" alt="Brazilian Choco Caramel Russian Honey cake 6 - By Farida Taher" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
+                        src="img/brazilian-choco-caramel-russian-honey-cake/slice-7.webp" alt="Brazilian Choco Caramel Russian Honey cake 6 - By Farida Taher" />
+                    </div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                  Brazilian Choco Caramel Russian Honey cake(BCC)
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                   ₹2,499/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/brazilian-chocolate-caramel-russian-honey-cake">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/brazilian-chocolate-caramel-russian-honey-cake">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          
 
         </div>
       </div>

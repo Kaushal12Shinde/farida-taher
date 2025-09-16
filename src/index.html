@@ -132,21 +132,45 @@
     display: block;
   }
 
+   @media (min-width: 768px) {
+
+    .course-slider .swiper-button-prev,
+    .course-slider .swiper-button-next {
+      width: 36px;
+      height: 36px;
+      background: white;
+      color: black;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .course-slider .swiper-button-prev::after,
+    .course-slider .swiper-button-next::after {
+      font-size: 16px;
+    }
+
+    .course-slider .swiper-button-prev .swiper-navigation-icon,
+    .course-slider .swiper-button-next .swiper-navigation-icon {
+      height: 90%;
+      width: 90%;
+    }
+  }
+
   .course-slider .swiper-button-prev,
   .course-slider .swiper-button-next {
-    width: 36px;
-    height: 36px;
+    width: 26px;
+    height: 26px;
     background: white;
     color: black;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  .course-slider .swiper-button-prev::after,
-  .course-slider .swiper-button-next::after {
-    font-size: 16px;
+  .course-slider .swiper-button-prev .swiper-navigation-icon,
+  .course-slider .swiper-button-next .swiper-navigation-icon {
+    height: 50%;
+    width: 50%;
   }
-
   .course-slider .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
@@ -329,45 +353,20 @@
           <div class="w-[160px] md:w-[260px] h-[2px] rounded-full bg-white mx-auto mt-3 md:mt-4"></div>
         </div>
       </div>
-      <div class="course-sec py-[60px] md:py-[100px]">
-        <div class="container flex items-center flex-col lg:flex-row gap-[28px] lg:gap-[40px]">
-          <div class="lg:w-[50%] flex-1">
-            <h1 class="text-[24px] md:text-[28px] font-josefin text-roseGold font-bold mb-1 text-center lg:text-left">The Apple Alchemy Cake Workshop</h1>
-            <p class="text-white text-[22px] md:text-[24px] tracking-[0.5px] font-bold text-center lg:text-left">₹599/- <span class="line-through text-18 md:text-[22px]"> ₹1,299/-</span></p>
-            <div class="flex items-center gap-4 mt-3 w-fit mx-auto lg:mx-0">
-              <div class="flex items-center gap-[12px] w-fit mx-auto">
-                <img src="img/calendar.svg" class="w-[30px] mt-[-1px]" alt="" />
-                <p class="text-white text-20 md:text-[22px] font-semibold mb-0 text-center">
-                 12<sup>&nbsp;th</sup> September
-                </p>
-              </div>
-              <div class="flex items-center gap-[12px] share-btn cursor-pointer" data-url="https://www.wildsugarmysore.in/apple-alchemy-cake">
-                <div
-                  class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20"
-                >
-                  <img
-                    src="img/share.svg"
-                    class="w-[25px] mt-[-1px]"
-                    alt=""
-                  />
-                </div>
-                <p class="text-white text-20 mb-0 leading-[0]">Share</p>
-              </div>
-            </div>
-            <a href="https://www.wildsugarmysore.in/apple-alchemy-cake">
-                <button
-                  class="wild-theme-btn text-18 md:text-[20px] mt-4 rounded-lg text-white flex items-center justify-center w-full lg:w-[260px] mx-auto lg:mx-0"
-                >
-                  Know More
-                  <img
-                    src="img/arrow-right.svg"
-                    class="inline-block ml-1 w-[24px]"
-                    alt=""
-                  />
-                </button>
-            </a>
-          </div>
-          <div class="w-[95%] lg:w-[50%] mx-auto">
+      <div class="container">
+        <a href="https://www.wildsugarmysore.in/courses">
+          <button
+            class="wild-theme-btn text-18 md:text-[20px] rounded-lg text-white flex justify-center items-center w-full md:w-[300px] mx-auto mt-[40px] ">
+            Explore More Courses
+            <img src="img/arrow-right.svg" class="inline-block ml-1 w-[24px]" alt="" />
+          </button>
+        </a>
+      </div>
+      <div class="container">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-2 md:gap-3 max-w-[1060px] mx-auto my-[60px]">
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
             <div class="course-slider">
               <div class="swiper">
                 <div class="swiper-wrapper">
@@ -405,49 +404,43 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="course-sec py-[60px] md:py-[100px]">
-        <div class="container flex items-center flex-col lg:flex-row-reverse gap-[28px] lg:gap-[40px]">
-          <div class="lg:w-[50%] flex-1">
-            <h1 class="text-[24px] md:text-[28px] font-josefin text-roseGold font-bold mb-1 text-center">Millet Magic Russian Honey Cake - The classics</h1>
-            <p class="text-white text-[22px] md:text-[24px] tracking-[0.5px] font-bold text-center mb-0"> ₹599/- <span class="line-through text-18 md:text-[22px]"> ₹1,299/-</span></p>
-            <div class="flex items-center gap-4 mt-3 w-fit mx-auto">
-              <div class="flex items-center gap-[12px]">
-                <div
-                  class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20">
-                  <img src="img/star.svg" class="w-[25px] mt-[-1px]" alt="" />
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                    The Apple Alchemy Cake Workshop
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                    ₹599/- <span class="line-through text-18 md:text-[22px]"> ₹1,299/-</span>
+                  </p>
                 </div>
-                <p class="text-white text-20 mb-0 leading-[0]">4.8</p>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/calendar.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      12th Sep
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/apple-alchemy-cake">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center gap-[12px] share-btn cursor-pointer" data-url="https://www.wildsugarmysore.in/millet-magic-russian-honey-cake">
-                <div
-                  class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20"
-                >
-                  <img
-                    src="img/share.svg"
-                    class="w-[25px] mt-[-1px]"
-                    alt=""
-                  />
-                </div>
-                <p class="text-white text-20 mb-0 leading-[0]">Share</p>
+              <div>
+                <a href="https://www.wildsugarmysore.in/apple-alchemy-cake">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
               </div>
             </div>
-            <a href="https://www.wildsugarmysore.in/millet-magic-russian-honey-cake">
-              <button
-                class="wild-theme-btn text-18 md:text-[20px] mt-4 rounded-lg text-white flex items-center justify-center w-full lg:w-[260px] mx-auto"
-              >
-                Know More
-                <img
-                  src="img/arrow-right.svg"
-                  class="inline-block ml-1 w-[24px]"
-                  alt=""
-                />
-              </button>
-            </a>
           </div>
-          <div class="w-[95%] lg:w-[50%] mx-auto">
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
             <div class="course-slider">
               <div class="swiper">
                 <div class="swiper-wrapper">
@@ -486,49 +479,43 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="course-sec py-[60px] md:py-[100px]">
-        <div class="container flex items-center flex-col lg:flex-row gap-[28px] lg:gap-[40px]">
-          <div class="lg:w-[50%] flex-1">
-            <h1 class="text-[24px] md:text-[28px] font-josefin text-roseGold font-bold mb-1 text-center lg:text-left">Matilda Brigadeiro Cake Workshop</h1>
-            <p class="text-white text-[22px] md:text-[24px] tracking-[0.5px] font-bold text-center lg:text-left"> ₹1,299/-</p>
-            <div class="flex items-center gap-4 mt-3 w-fit mx-auto lg:mx-0">
-              <div class="flex items-center gap-[12px]">
-                <div
-                  class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20">
-                  <img src="img/star.svg" class="w-[25px] mt-[-1px]" alt="" />
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                    Millet Magic Russian Honey Cake - The classics
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                    ₹599/- <span class="line-through text-18 md:text-[22px]"> ₹1,299/-</span>
+                  </p>
                 </div>
-                <p class="text-white text-20 mb-0 leading-[0]">4.9</p>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/millet-magic-russian-honey-cake">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center gap-[12px] share-btn cursor-pointer" data-url="https://www.wildsugarmysore.in/matilda-brigadeiro-cake">
-                <div
-                  class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20"
-                >
-                  <img
-                    src="img/share.svg"
-                    class="w-[25px] mt-[-1px]"
-                    alt=""
-                  />
-                </div>
-                <p class="text-white text-20 mb-0 leading-[0]">Share</p>
+              <div>
+                <a href="https://www.wildsugarmysore.in/millet-magic-russian-honey-cake">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
               </div>
             </div>
-            <a href="https://www.wildsugarmysore.in/matilda-brigadeiro-cake">
-                <button
-                  class="wild-theme-btn text-18 md:text-[20px] mt-4 rounded-lg text-white flex items-center justify-center w-full lg:w-[260px] mx-auto lg:mx-0"
-                >
-                  Know More
-                  <img
-                    src="img/arrow-right.svg"
-                    class="inline-block ml-1 w-[24px]"
-                    alt=""
-                  />
-                </button>
-            </a>
           </div>
-          <div class="w-[95%] lg:w-[50%] mx-auto">
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
             <div class="course-slider">
               <div class="swiper">
                 <div class="swiper-wrapper">
@@ -536,7 +523,7 @@
                     <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;"
                       src="img/matilda-brigadeiro-cake/img-1.webp" alt="Matilda Brigadeiro Cake 1 - By Farida Taher" />
                   </div>
-                  
+
                   <div class="swiper-slide">
                     <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;"
                       src="img/matilda-brigadeiro-cake/img-4.webp" alt="Matilda Brigadeiro Cake 2 - By Farida Taher" />
@@ -555,49 +542,43 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="course-sec py-[60px] md:py-[100px]">
-        <div class="container flex items-center flex-col lg:flex-row-reverse gap-[28px] lg:gap-[40px]">
-          <div class="lg:w-[50%] flex-1">
-            <h1 class="text-[24px] md:text-[28px] font-josefin text-roseGold font-bold mb-1 text-center">The Savoury Edit-Snack Smarter</h1>
-            <p class="text-white text-[22px] md:text-[24px] tracking-[0.5px] font-bold text-center mb-0"> ₹2,499/-</p>
-            <div class="flex items-center gap-4 mt-3 w-fit mx-auto">
-              <div class="flex items-center gap-[12px]">
-                <div
-                  class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20">
-                  <img src="img/star.svg" class="w-[25px] mt-[-1px]" alt="" />
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                    Matilda Brigadeiro Cake Workshop
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                    ₹1,299/-
+                  </p>
                 </div>
-                <p class="text-white text-20 mb-0 leading-[0]">4.8</p>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.9
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/matilda-brigadeiro-cake">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center gap-[12px] share-btn cursor-pointer" data-url="https://www.wildsugarmysore.in/the-savoury-edit-snack-smarter">
-                <div
-                  class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20"
-                >
-                  <img
-                    src="img/share.svg"
-                    class="w-[25px] mt-[-1px]"
-                    alt=""
-                  />
-                </div>
-                <p class="text-white text-20 mb-0 leading-[0]">Share</p>
+              <div>
+                <a href="https://www.wildsugarmysore.in/matilda-brigadeiro-cake">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
               </div>
             </div>
-            <a href="https://www.wildsugarmysore.in/the-savoury-edit-snack-smarter">
-              <button
-                class="wild-theme-btn text-18 md:text-[20px] mt-4 rounded-lg text-white flex items-center justify-center w-full lg:w-[260px] mx-auto"
-              >
-                Know More
-                <img
-                  src="img/arrow-right.svg"
-                  class="inline-block ml-1 w-[24px]"
-                  alt=""
-                />
-              </button>
-            </a>
           </div>
-          <div class="w-[95%] lg:w-[50%] mx-auto">
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
             <div class="course-slider">
               <div class="swiper">
                 <div class="swiper-wrapper">
@@ -642,47 +623,49 @@
                       src="img/savoury-nack/img-10.webp" alt="Savoury Snack Smarter 10 - By Fairda Taher" />
                   </div>
                 </div>
-            
+
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="course-sec py-[60px] md:py-[100px]">
-        <div class="container flex items-center flex-col lg:flex-row gap-[28px] lg:gap-[40px]">
-          <div class="lg:w-[50%] flex-1">
-            <h1 class="text-[24px] md:text-[28px] font-josefin text-roseGold font-bold mb-1 text-center lg:text-left">
-              Eggfree, Gluten Free Millet Cookies Masterclass</h1>
-            <p class="text-white text-[22px] md:text-[24px] tracking-[0.5px] font-bold text-center lg:text-left">
-              ₹2,699/-</p>
-            <div class="flex items-center gap-4 mt-1 w-fit mx-auto lg:mx-0">
-              <div class="flex items-center gap-[12px]">
-                <div
-                  class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20">
-                  <img src="img/star.svg" class="w-[25px] mt-[-1px]" alt="" />
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                    The Savoury Edit-Snack Smarter
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                    ₹2,499/-
+                  </p>
                 </div>
-                <p class="text-white text-20 mb-0 leading-[0]">4.9</p>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/the-savoury-edit-snack-smarter">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center gap-[12px] share-btn cursor-pointer" data-url="https://www.wildsugarmysore.in/eggfree-gluten-free-millet-cookies">
-                <div
-                  class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20">
-                  <img src="img/share.svg" class="w-[25px] mt-[-1px]" alt="" />
-                </div>
-                <p class="text-white text-20 mb-0 leading-[0]">Share</p>
+              <div>
+                <a href="https://www.wildsugarmysore.in/the-savoury-edit-snack-smarter">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
               </div>
             </div>
-            <a href="https://www.wildsugarmysore.in/eggfree-gluten-free-millet-cookies">
-              <button
-                class="wild-theme-btn text-18 md:text-[20px] mt-4 rounded-lg text-white flex items-center justify-center w-full lg:w-[260px] mx-auto lg:mx-0">
-                Know More
-                <img src="img/arrow-right.svg" class="inline-block ml-1 w-[24px]" alt="" />
-              </button>
-            </a>
           </div>
-          <div class="w-[95%] lg:w-[50%] mx-auto">
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
             <div class="course-slider">
               <div class="swiper">
                 <div class="swiper-wrapper">
@@ -717,46 +700,50 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="course-sec py-[60px] md:py-[100px]">
-        <div class="container flex items-center flex-col lg:flex-row-reverse gap-[28px] lg:gap-[40px]">
-          <div class="lg:w-[50%] flex-1">
-            <h1 class="text-[24px] md:text-[28px] font-josefin text-roseGold font-bold mb-1 text-center">Eggfree, Gluten
-              Free Millet Brownies Masterclass</h1>
-            <p class="text-white text-[22px] md:text-[24px] tracking-[0.5px] font-bold text-center"> ₹2,899/-</p>
-            <div class="flex items-center gap-4 mt-1 w-fit mx-auto">
-              <div class="flex items-center gap-[12px]">
-                <div
-                  class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20">
-                  <img src="img/star.svg" class="w-[25px] mt-[-1px]" alt="" />
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                    Eggfree, Gluten Free Millet Cookies Masterclass
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                    ₹2,699/-
+                  </p>
                 </div>
-                <p class="text-white text-20 mb-0 leading-[0]">4.8</p>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.9
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/eggfree-gluten-free-millet-cookies">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center gap-[12px] share-btn cursor-pointer" data-url="https://www.wildsugarmysore.in/eggfree-gluten-free-millet-brownies">
-                <div
-                  class="w-[40px] h-[40px] rounded-full flex items-center justify-center bg-white/10 border border-white/20">
-                  <img src="img/share.svg" class="w-[25px] mt-[-1px]" alt="" />
-                </div>
-                <p class="text-white text-20 mb-0 leading-[0]">Share</p>
+              <div>
+                <a href="https://www.wildsugarmysore.in/eggfree-gluten-free-millet-cookies">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
               </div>
             </div>
-            <a href="https://www.wildsugarmysore.in/eggfree-gluten-free-millet-brownies">
-              <button
-                class="wild-theme-btn text-18 md:text-[20px] mt-4 rounded-lg text-white flex items-center justify-center w-full lg:w-[260px] mx-auto">
-                Know More
-                <img src="img/arrow-right.svg" class="inline-block ml-1 w-[24px]" alt="" />
-              </button>
-            </a>
           </div>
-          <div class="w-[95%] lg:w-[50%] mx-auto">
+
+          <div class="flex flex-col h-full border border-roseGoldDark/50 rounded-lg overflow-hidden">
             <div class="course-slider">
               <div class="swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
-                      src="img/millet-brownies/eggfree-glutenfree-cover-image.webp" alt="Millet Brownies 1 - By Farida Taher" />
+                      src="img/millet-brownies/eggfree-glutenfree-cover-image.webp"
+                      alt="Millet Brownies 1 - By Farida Taher" />
                   </div>
                   <div class="swiper-slide">
                     <img style="aspect-ratio: 1/1; object-fit: cover; object-position: center;" loading="lazy"
@@ -785,10 +772,44 @@
                 <div class="swiper-pagination"></div>
               </div>
             </div>
+            <div class="h-full flex flex-col justify-between">
+              <div>
+                <div class="px-2 py-1">
+                  <h1 class="text-[18px] md:text-[20px] font-josefin text-roseGold font-bold mb-1 text-center">
+                    Eggfree, Gluten Free Millet Brownies Masterclass
+                  </h1>
+                  <p class="text-white text-[18px] md:text-[20px] tracking-[0.5px] font-bold text-center mb-0">
+                    ₹2,899/-
+                  </p>
+                </div>
+                <div class="flex items-center gap-2 w-fit mx-auto px-2">
+                  <div class="flex items-center gap-[12px] w-fit mx-auto">
+                    <img src="img/star.svg" class="w-[18px] md:w-[26px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-[18px] font-semibold mb-0 text-center">
+                      4.8
+                    </p>
+                  </div>
+                  <div class="flex items-center gap-[12px] share-btn cursor-pointer"
+                    data-url="https://www.wildsugarmysore.in/eggfree-gluten-free-millet-brownies">
+                    <img src="img/share.svg" class="w-[20px] md:w-[25px] mt-[-1px]" alt="" />
+                    <p class="text-white text-16 md:text-18 mb-0 leading-[0]">Share</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <a href="https://www.wildsugarmysore.in/eggfree-gluten-free-millet-brownies">
+                  <button
+                    class="wild-theme-btn text-16 md:text-[18px] mt-1 mb-2 rounded-lg text-white flex items-center justify-center w-[90%] mx-auto">
+                    Know More
+                    <img src="img/arrow-right.svg" class="inline-block ml-1 w-[18px] md:w-[24px]" alt="" />
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
-      
       <div class="container">
         <a href="https://www.wildsugarmysore.in/courses">
           <button
@@ -1177,7 +1198,7 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script>
     new Swiper(".course-slider .swiper", {
-      slidesPerView: 4,
+      slidesPerView: 1,
       spaceBetween: 20,
       navigation: {
         nextEl: ".course-slider .swiper-button-next",
@@ -1187,15 +1208,8 @@
         el: ".course-slider .swiper-pagination",
         clickable: true,
       },
-      breakpoints: {
-        0: { slidesPerView: 1 },
-        320: { slidesPerView: 1.2 },
-        475: { slidesPerView: 1.8 },
-        640: { slidesPerView: 2.3 },
-        768: { slidesPerView: 2.3 },
-      }
     });
-
+    
     new Swiper(".t-slider .swiper", {
     slidesPerView: 4,
     spaceBetween: 20,
