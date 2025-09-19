@@ -1365,3 +1365,7 @@ table th:last-child {
       transform: rotate(360deg);
   }
   } 
+
+  .light-custom-shadow{
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 3px 29px 0px;
+  }
