@@ -1155,6 +1155,10 @@ video {
   overflow: hidden;
 }
 
+.whitespace-normal {
+  white-space: normal;
+}
+
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -1530,11 +1534,6 @@ video {
 
 .text-white\/90 {
   color: rgb(255 255 255 / 0.9);
-}
-
-.text-roseGoldDark {
-  --tw-text-opacity: 1;
-  color: rgb(242 106 106 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -3576,10 +3575,6 @@ table th:last-child {
 
   .md\:text-\[80px\] {
     font-size: 80px;
-  }
-
-  .md\:text-\[2px\] {
-    font-size: 2px;
   }
 }
 
