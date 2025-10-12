@@ -114,20 +114,45 @@ No shortcuts. No store-bought wafers. Just pure, artisan dessert craft." />
         display: block;
     }
 
+    @media (min-width: 768px) {
+
     .course-slider .swiper-button-prev,
     .course-slider .swiper-button-next {
-        width: 36px;
-        height: 36px;
-        background: white;
-        color: black;
-        border-radius: 50%;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      width: 36px;
+      height: 36px;
+      background: white;
+      color: black;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .course-slider .swiper-button-prev::after,
     .course-slider .swiper-button-next::after {
-        font-size: 16px;
+      font-size: 16px;
     }
+
+    .course-slider .swiper-button-prev .swiper-navigation-icon,
+    .course-slider .swiper-button-next .swiper-navigation-icon {
+      height: 90%;
+      width: 90%;
+    }
+  }
+
+  .course-slider .swiper-button-prev,
+  .course-slider .swiper-button-next {
+    width: 26px;
+    height: 26px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .course-slider .swiper-button-prev .swiper-navigation-icon,
+  .course-slider .swiper-button-next .swiper-navigation-icon {
+    height: 50%;
+    width: 50%;
+  }
 
     .course-slider .swiper-pagination-bullet {
         width: 8px;
