@@ -782,6 +782,14 @@ video {
   margin-top: 90px;
 }
 
+.mb-\[6px\] {
+  margin-bottom: 6px;
+}
+
+.mb-\[4px\] {
+  margin-bottom: 4px;
+}
+
 .block {
   display: block;
 }
@@ -1036,18 +1044,8 @@ video {
   flex-grow: 1;
 }
 
-.-rotate-180 {
-  --tw-rotate: -180deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .rotate-90 {
   --tw-rotate: 90deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-rotate-90 {
-  --tw-rotate: -90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1131,6 +1129,10 @@ video {
   gap: 12px;
 }
 
+.gap-\[24px\] {
+  gap: 24px;
+}
+
 .gap-\[28px\] {
   gap: 28px;
 }
@@ -1145,11 +1147,6 @@ video {
 
 .gap-\[40px\] {
   gap: 40px;
-}
-
-.gap-x-3 {
-  -moz-column-gap: 24px;
-       column-gap: 24px;
 }
 
 .gap-x-4 {
@@ -3223,10 +3220,6 @@ table th:last-child {
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .sm\:gap-2 {
-    gap: 16px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -3430,10 +3423,6 @@ table th:last-child {
 
   .md\:gap-\[74px\] {
     gap: 74px;
-  }
-
-  .md\:gap-1 {
-    gap: 8px;
   }
 
   .md\:rounded-\[120px\] {
