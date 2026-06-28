@@ -23,6 +23,10 @@ module.exports = {
         richblack: "#051118",
         roseGoldDark:'#f26a6a',
         roseGold:"#f89899",
+        caramel:"#cb8740",
+        ivory:"#f8f3e9",
+        "caramel-deep":"#b3621e",
+        foreground:"#28110a",
       },
       fontSize: {
         verysmall: [
@@ -109,7 +113,8 @@ module.exports = {
         manrope: "Manrope, sans-serif",
         ametrine:"Ametrine",
         ametrineItalic:"Ametrine-Italic",
-        josefin:"Josefin Sans, sans-serif"
+        josefin:"Josefin Sans, sans-serif",
+        cormorant: "Cormorant Garamond, serif"
       },
       animation: {
         marquee: "marqueeanim 30s normal linear infinite",

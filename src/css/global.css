@@ -1369,3 +1369,13 @@ table th:last-child {
   .light-custom-shadow{
     box-shadow: rgba(255, 255, 255, 0.3) 0px 3px 29px 0px;
   }
+
+  .london-shadow{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  }
+
+  .dark-icon {
+  filter: brightness(0) saturate(100%) invert(8%) sepia(48%)
+    saturate(1838%) hue-rotate(336deg)
+    brightness(92%) contrast(95%);
+}
