@@ -1600,16 +1600,16 @@ video {
   padding-top: 110px;
 }
 
+.pt-\[30px\] {
+  padding-top: 30px;
+}
+
 .pt-\[40px\] {
   padding-top: 40px;
 }
 
 .pt-\[60px\] {
   padding-top: 60px;
-}
-
-.pt-\[30px\] {
-  padding-top: 30px;
 }
 
 .text-left {
@@ -1702,10 +1702,6 @@ video {
 
 .text-\[45px\] {
   font-size: 45px;
-}
-
-.text-\[2px\] {
-  font-size: 2px;
 }
 
 .\!font-normal {
@@ -1906,28 +1902,12 @@ video {
   color: rgb(255 255 255 / 0.9);
 }
 
-.text-\[px\] {
-  color: px;
-}
-
 .underline {
   text-decoration-line: underline;
 }
 
 .line-through {
   text-decoration-line: line-through;
-}
-
-.opacity-80 {
-  opacity: 0.8;
-}
-
-.opacity-20 {
-  opacity: 0.2;
-}
-
-.opacity-50 {
-  opacity: 0.5;
 }
 
 .ring {
@@ -3896,6 +3876,11 @@ table th:last-child {
     gap: 74px;
   }
 
+  .md\:gap-x-3 {
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+  }
+
   .md\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(16px * calc(1 - var(--tw-space-y-reverse)));
@@ -4072,6 +4057,10 @@ table th:last-child {
     font-size: 40px;
   }
 
+  .md\:text-\[42px\] {
+    font-size: 42px;
+  }
+
   .md\:text-\[46px\] {
     font-size: 46px;
   }
@@ -4084,20 +4073,12 @@ table th:last-child {
     font-size: 80px;
   }
 
-  .md\:text-\[4px\] {
-    font-size: 4px;
-  }
-
-  .md\:text-\[42px\] {
-    font-size: 42px;
-  }
-
   .md\:leading-normal {
     line-height: 1.5;
   }
 
-  .md\:text-\[px\] {
-    color: px;
+  .md\:text-\[\] {
+    color: ;
   }
 }
 
@@ -4215,5 +4196,9 @@ table th:last-child {
 
   .lg\:text-\[60px\] {
     font-size: 60px;
+  }
+
+  .lg\:text-\[24px\] {
+    font-size: 24px;
   }
 }
